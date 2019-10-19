@@ -1,0 +1,10 @@
+body {
+    font-size: 60px;
+    font-family: 'Lato', Lato Bold;
+    font-style: normal;
+}
+
+div {
+    padding: 50px;
+    min-height: 100vh;
+}
