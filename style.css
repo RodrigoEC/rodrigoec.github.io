@@ -1,9 +1,44 @@
 body {
-    font-size: 60px;
-    font-style: normal;
+    background-color: rgb(238, 238, 238);
+    margin: 0mm;
+    font-family: 'Montserrat', sans-serif;
+    
 }
 
-div {
-    padding: 50px;
-    min-height: 100vh;
+#barrinha {
+    background-color: rgb(49, 49, 49);
+      
+    text-align: left;
+    margin-left: 615;
+    margin-top: 224;
+    height: 49;
+    width: 250;
+
+    font-size: 2.5rem;
+    color: rgb(238, 238, 238);
+    
 }
+
+#title {
+    font-weight: 200;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -160px; /* margin is -0.5 * dimension */
+    margin-top: -30px;  
+
+}
+
+/* This text is in Lato */
+.upperside {
+    min-height: 100vh;
+    text-align: center;
+    
+}
+.underside {
+    background-color: rgb(49, 49, 49);
+    min-height: 100vh;
+    text-align: center;
+}
+
