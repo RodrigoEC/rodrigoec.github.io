@@ -23,30 +23,33 @@ body {
 }
 
 #rightSide {
-    padding: 10px;
+    padding: 1px;
+    padding-left: 2px;
     color: rgb(238, 238, 238);
     background-color: rgb(49, 49, 49);
     
     
 
 }
-@keyframes piscar {
-    0%, 49% {
-        opacity: 0;
-        
-    } 50%, 100% {
-        opacity: 1;
-    }
-}
-
 
 #barrinha {
-    background-color: white;
-    height: 2.5rem;
-    width: 15px;
+
+    height: 5rem;
+    
+    width: 10px;
     animation:
     piscar 1s infinite;
 }
+
+@keyframes piscar {
+    0%, 49% {
+        color: rgb(238, 238, 238);
+        
+    } 50%, 100% {
+        color: rgb(49, 49, 49);
+    }
+}
+
 
 
 /* This text is in Lato */
