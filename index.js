@@ -13,7 +13,7 @@ var aText = new Array("o Eloy");
   {
    sContents =  '';
    iRow = Math.max(0, iIndex-iScrollAt);
-   var destination = document.getElementById("barrinha");
+   var destination = document.getElementById("rightSide");
    
    while ( iRow < iIndex ) {
     sContents += aText[iRow++] + '<br />';
