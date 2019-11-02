@@ -1,60 +1,65 @@
 body {
     background-color: rgb(238, 238, 238);
-    margin: 0mm;
+    margin: 0;
+    padding: 0;
     font-family: 'Montserrat', sans-serif;
 
 }
 
 #center {
+    font-size: 2.5rem;
+
     width: 500px;
     height: 200px;
-    
-    position: absolute; 
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(238, 238, 238);
-    background-color: rgb(49, 49, 49);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(49, 49, 49);
 }
 
 
 #leftSide {
-    position: absolute; 
-    left: 35%;
-    top: 40%;
-    transform: translate(-50%, -50%);
 
 }
 
 #rightSide {
-    position: absolute; 
-    left: 56.6%;
-    top: 40%;
-    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: rgb(238, 238, 238);
+    background-color: rgb(49, 49, 49);
+    
+    
+
+}
+@keyframes piscar {
+    0%, 49% {
+        opacity: 0;
+        
+    } 50%, 100% {
+        opacity: 1;
+    }
 }
 
-#barrinha {
-      
-    text-align: left;
-    margin-left: 50%;
-    margin-top: 224;
-    height: 49;
-    width: 250;
 
-    font-size: 2.5rem;
-    
+#barrinha {
+    background-color: white;
+    height: 2.5rem;
+    width: 15px;
+    animation:
+    piscar 1s infinite;
 }
 
 
 /* This text is in Lato */
 .upperside {
     min-height: 100vh;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
+
 .underside {
     background-color: rgb(49, 49, 49);
     min-height: 100vh;
-    text-align: center;
 }
 
