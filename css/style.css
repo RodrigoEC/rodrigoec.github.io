@@ -135,10 +135,7 @@ h1 span {
     text-decoration: None;
 }
 
-.projects a:visited {
-    color: rgb(228, 227, 227);
-    text-decoration: None;
-}
+
 
 .projects li:hover {
     transform: scale(1.05);
