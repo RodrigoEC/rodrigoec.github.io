@@ -82,9 +82,10 @@ h1 span {
 }
 
 .left-information p {
-    text-align: justify;
+    text-align: center;
     padding: 15px;
     font-size: 1.1em;
+    line-height: 1.6em;
 }
 
 
@@ -123,7 +124,7 @@ h1 span {
     margin: 0 10px 20px;
     transition: 0.3s;
     cursor: pointer;
-    box-shadow: 3px 3px 7px rgb(224, 224, 224);
+    /* box-shadow: 3px 3px 7px rgb(224, 224, 224); */
 }
 
 .projects p {
@@ -141,5 +142,8 @@ h1 span {
     transform: scale(1.05);
 }
 
-
-
+footer {
+    background: rgb(35, 39, 41);
+    color: rgb(228, 227, 227);
+    text-align: center;
+}
