@@ -70,10 +70,8 @@ section + div {
     border-bottom: thin solid white;
     width: 70px;
     margin: 0 auto;
+    clear: both;
 }
-
-
-
 
 
 .titulo-secao {
@@ -83,16 +81,15 @@ section + div {
     margin-bottom: 30px;
 }
 
-.titulo-secao:before {
-    content: 0xE2;
-}
+
 
 .about-me {
     padding: 15px;
     width: 940px;
     margin: 0 auto;
     box-sizing: border-box;
-    margin-bottom: 250px;
+    margin-bottom: 40px;
+    float: left;
 }
 
 .eu {
@@ -104,7 +101,6 @@ section + div {
 }
 
 .projects {
-    clear:left;
     box-sizing: border-box;
     padding: 15px;
     width: 70%;
