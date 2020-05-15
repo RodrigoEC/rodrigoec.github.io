@@ -113,6 +113,8 @@ section + div {
     font-size: 1.5em;
     margin-bottom: 20px;
     text-align: center;
+    line-height: 1.6em;
+
 }
 
 .projects li {
@@ -127,7 +129,7 @@ section + div {
     margin: 0 15px 30px 0;
     transition: 0.7s;
     vertical-align: top;
-    box-shadow: 2px 2px 3px rgb(107, 100, 100);
+    box-shadow: 2px 2px 4px rgb(8, 1, 1);
 }
 
 .projects li:hover{
@@ -174,6 +176,7 @@ section + div {
     margin: 40px 0;
     border-radius: 5px;
     box-shadow: 5px 5px 4px rgb(25, 29, 31), -1px -1px 5px rgb(25, 29, 31) ;
+    background: rgba(35, 39, 41, 0.7);
 
 }
 
