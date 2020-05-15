@@ -92,6 +92,15 @@ section + div {
     float: left;
 }
 
+.about-me strong {
+    font-weight: bold;
+}
+
+.about-me p {
+    text-indent: 1em;
+    text-align: justify;
+}
+
 .eu {
     float: left;
     width: 40%;
