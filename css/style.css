@@ -1,4 +1,4 @@
-body {
+html {
     font-family: 'Montserrat', sans-serif;
     background: rgb(47, 52, 55);
     color: rgba(47, 52, 55);
@@ -12,20 +12,20 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 0px 10px 20px rgb(34, 34, 34);
+    box-shadow: 0px 15px 20px rgb(34, 34, 34);
     
 }
 
 .center h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
 }
 
 .center h1 p {
     background-color: rgba(47, 52, 55);
     color: rgb(211, 211, 211); 
     padding: 5px 5px 5px 0;
-    font-weight: bolder;
+    font-weight: bold;
     display: inline-block;
     border-radius: 5px;
 }
@@ -39,38 +39,30 @@ h1 span {
     animation: color-change 0.7s infinite alternate;
 }
 
-.social-media-icons li {
+.icon {
     display: inline;
     cursor: pointer;
 }
 
-.social-media-icons img:hover {
+.icon:hover img {
     transition: 0.3s;
     transform: scale(1.05);
     background-color: rgba(47, 52, 55, 0.3);
     border-radius: 90px;
 }
 
-.social-media-icons img {
-    width: 50px;
-    margin: 5px 25px;
-
+.icon img{
+    width: 3rem;
+    margin: 0 1.5rem;
 }
 
 main {
     color: rgb(228, 227, 227);
-    padding: 40px 20px;
-    width: 940px;
+    padding: 4rem 2rem;
+    max-width: 940px;
     margin: 0 auto;
     line-height: 1.6em;
 
-}
-
-section + div {
-    border-bottom: thin solid white;
-    width: 70px;
-    margin: 0 auto;
-    clear: both;
 }
 
 
@@ -85,11 +77,17 @@ section + div {
 
 .about-me {
     padding: 15px;
-    width: 940px;
-    margin: 0 auto;
     box-sizing: border-box;
     margin-bottom: 40px;
     float: left;
+}
+
+.eu {
+    float: left;
+    width: 40%;
+    padding: 0 15px 15px 0;
+    box-sizing: border-box;
+
 }
 
 .about-me strong {
@@ -101,13 +99,23 @@ section + div {
     text-align: justify;
 }
 
-.eu {
-    float: left;
-    width: 40%;
-    padding: 0 15px 15px 0;
-    box-sizing: border-box;
-
+section + div {
+    border-bottom: thin solid white;
+    width: 3em;
+    margin: 0 auto;
+    clear: both;
 }
+
+/* Expect structure for projects:
+    <h3></h3>
+    <ul>
+        <li>
+            <h4></h4>
+            <p></p>
+        </li>
+    </ul>
+
+That's why I'm not using classes in the elements of the project class*/
 
 .projects {
     box-sizing: border-box;
@@ -151,7 +159,7 @@ section + div {
 
 .projects li h4{
     font-weight: bold;
-    font-size: 1.53em;
+    font-size: 1.5em;
     margin-bottom: 10px;
     text-align: start;
 
@@ -176,6 +184,17 @@ section + div {
     transition-delay: 0.3s;
 }
 
+/* Expect structure for projects:
+    <h3></h3>
+    <ul>
+        <li>
+            <h4></h4>
+            <p></p>
+        </li>
+    </ul>
+
+That's why I'm not using classes in the elements of the project class*/
+
 .technologies {
     padding:15px;
     width: 30%;
@@ -186,11 +205,8 @@ section + div {
     border-radius: 5px;
     box-shadow: 5px 5px 4px rgb(25, 29, 31), -1px -1px 5px rgb(25, 29, 31) ;
     background: rgba(35, 39, 41, 0.7);
-
-}
-
-.technologies ul {
     text-align: center;
+
 }
 
 .technologies li {
@@ -209,11 +225,5 @@ section + div {
     font-size: 1em;
     margin-bottom: 10px;
     text-align: start;
-}
-
-footer {
-    background: rgb(35, 39, 41);
-    color: rgb(228, 227, 227);
-    text-align: center;
 }
 
