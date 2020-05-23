@@ -159,7 +159,7 @@ section + div {
 
 That's why I'm not using classes in the elements of the project class*/
 
-.projects, .projects:focus {
+.projects {
     box-sizing: border-box;
     padding: 15px;
     width: 70%;
@@ -212,7 +212,6 @@ That's why I'm not using classes in the elements of the project class*/
 
 } 
 
-
 .projects p {
     visibility: hidden;
 }
@@ -255,7 +254,6 @@ That's why I'm not using classes in the elements of the project class*/
     box-sizing: border-box; 
     border-radius: 5px;
     margin: 0 15px 10px 0;
-    transition: 0.7s;
 
     font-weight: bold;
     font-size: 1em;
