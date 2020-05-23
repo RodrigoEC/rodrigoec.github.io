@@ -240,7 +240,7 @@ That's why I'm not using classes in the elements of the project class*/
     display: inline-block;
     margin: 40px 0;
     border-radius: 5px;
-    box-shadow: 5px 5px 4px rgb(25, 29, 31), inset -1px -1px 5px rgb(25, 29, 31) ;
+    box-shadow: 5px 5px 4px rgb(25, 29, 31), inset -1px -1px 1px rgb(25, 29, 31) ;
     background: rgba(35, 39, 41, 0.7);
     text-align: center;
 
