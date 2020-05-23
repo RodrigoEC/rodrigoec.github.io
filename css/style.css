@@ -78,6 +78,11 @@ main {
 
 }
 
+:focus {
+    outline-color: white;
+    shape-outside: inherit;
+}
+
 .language {
     padding: 10px;
     display: inline-block;
@@ -114,11 +119,6 @@ main {
     float: left;
 }
 
-
-:focus {
-    outline-color: white;
-    shape-outside: inherit;
-}
 
 
 
@@ -185,7 +185,7 @@ That's why I'm not using classes in the elements of the project class*/
     box-sizing: border-box; 
     border-radius: 5px;
     margin: 0 15px 30px 0;
-    transition: 0.7s;
+    transition: 0.7s ;
     vertical-align: top;
     box-shadow: 2px 2px 4px rgb(8, 1, 1);
 }
@@ -219,7 +219,7 @@ That's why I'm not using classes in the elements of the project class*/
 
 .projects li:hover > p, li:focus > p {
     visibility: visible;
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
 }
 
 /* Expect structure for projects:
@@ -263,4 +263,3 @@ That's why I'm not using classes in the elements of the project class*/
     text-align: start;
 }
 
-    
