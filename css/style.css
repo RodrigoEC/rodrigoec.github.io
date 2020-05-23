@@ -2,6 +2,8 @@ html {
     font-family: 'Montserrat', sans-serif;
     background: rgb(47, 52, 55);
     color: rgba(47, 52, 55);
+    scroll-behavior: smooth;
+
 
 }
 
@@ -13,8 +15,10 @@ header {
     justify-content: center;
     text-align: center;
     box-shadow: 0px 15px 20px rgb(34, 34, 34);
+
     
 }
+
 
 .center h1 {
     font-size: 2.5rem;
@@ -39,16 +43,25 @@ h1 span {
     animation: color-change 0.7s infinite alternate;
 }
 
-.icon {
-    display: inline;
+
+.icon, a {
+    display: inline-block;
     cursor: pointer;
 }
 
-.icon:hover img {
+a:focus {
+    outline-color: rgb(47, 52, 55);
+}
+.icon ~ a {
+    display: none;
+}
+.icon:hover img, .icon img:focus {
     transition: 0.3s;
     transform: scale(1.05);
     background-color: rgba(47, 52, 55, 0.3);
     border-radius: 90px;
+
+
 }
 
 .icon img{
@@ -58,11 +71,30 @@ h1 span {
 
 main {
     color: rgb(228, 227, 227);
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     max-width: 940px;
     margin: 0 auto;
     line-height: 1.6em;
 
+}
+
+.language {
+    padding: 10px;
+    display: inline-block;
+    box-sizing: border-box; 
+    background: rgb(35, 39, 41);
+    border-radius: 5px;
+    margin: 0 15px;
+    transition: 0.3s;
+    font-weight: bold;
+
+    box-shadow:  2px 2px 4px black, inset -1px -1px 1px black;
+}
+
+.language:hover, .language:focus {
+    transform: scale(1.05);
+    background-color: rgb(228, 227, 227);
+    color: rgb(35, 39, 41);
 }
 
 
@@ -82,10 +114,19 @@ main {
     float: left;
 }
 
+
+:focus {
+    outline-color: white;
+    shape-outside: inherit;
+}
+
+
+
+
 .eu {
     float: left;
-    width: 40%;
-    padding: 0 15px 15px 0;
+    width: 40%;     
+    margin: 0 15px 0 0;
     box-sizing: border-box;
 
 }
@@ -95,7 +136,8 @@ main {
 }
 
 .about-me p {
-    text-indent: 1em;
+    text-indent: 3rem;
+    line-height: 1.6rem;
     text-align: justify;
 }
 
@@ -117,7 +159,7 @@ section + div {
 
 That's why I'm not using classes in the elements of the project class*/
 
-.projects {
+.projects, .projects:focus {
     box-sizing: border-box;
     padding: 15px;
     width: 70%;
@@ -148,7 +190,7 @@ That's why I'm not using classes in the elements of the project class*/
     box-shadow: 2px 2px 4px rgb(8, 1, 1);
 }
 
-.projects li:hover{
+.projects li:hover, li:focus{
     width: 160px;
     height: 180px;
     background: rgb(228, 227, 227);
@@ -158,29 +200,26 @@ That's why I'm not using classes in the elements of the project class*/
 
 .projects li h4{
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-bottom: 10px;
     text-align: start;
 
 }
 
 .projects li:hover h4 {
-    font-size: 1.6em;
-    transition: 0.3s;
+    font-size: 1.6rem;
+    transition: 0.4s;
 
 } 
 
-.projects a {
-    color: rgb(228, 227, 227);
-}
 
 .projects p {
     visibility: hidden;
 }
 
-.projects li:hover > p {
+.projects li:hover > p, li:focus > p {
     visibility: visible;
-    transition-delay: 0.3s;
+    transition-delay: 0.5s;
 }
 
 /* Expect structure for projects:
@@ -202,7 +241,7 @@ That's why I'm not using classes in the elements of the project class*/
     display: inline-block;
     margin: 40px 0;
     border-radius: 5px;
-    box-shadow: 5px 5px 4px rgb(25, 29, 31), -1px -1px 5px rgb(25, 29, 31) ;
+    box-shadow: 5px 5px 4px rgb(25, 29, 31), inset -1px -1px 5px rgb(25, 29, 31) ;
     background: rgba(35, 39, 41, 0.7);
     text-align: center;
 
@@ -211,10 +250,8 @@ That's why I'm not using classes in the elements of the project class*/
 .technologies li {
     display: inline-block;
     padding: 10px;
-    width: 130px;
-    height: 50px;
-    background: rgb(35, 39, 41);
-    border: 2px solid rgb(228, 227, 227);
+    background: rgb(47, 52, 55);
+    box-shadow:  2px 2px 4px black, inset -1px -1px 1px black;
     box-sizing: border-box; 
     border-radius: 5px;
     margin: 0 15px 10px 0;
@@ -226,3 +263,4 @@ That's why I'm not using classes in the elements of the project class*/
     text-align: start;
 }
 
+    
