@@ -119,10 +119,6 @@ main {
     float: left;
 }
 
-
-
-
-
 .eu {
     float: left;
     width: 40%;     
@@ -136,9 +132,8 @@ main {
 }
 
 .about-me p {
-    text-indent: 3rem;
     line-height: 1.6rem;
-    text-align: justify;
+    margin-bottom: 10px;
 }
 
 section + div {
@@ -181,21 +176,20 @@ That's why I'm not using classes in the elements of the project class*/
     width: 130px;
     height: 80px;
     background: rgb(35, 39, 41);
-    border: 2px solid rgb(228, 227, 227);
+    /* border: 2px solid rgb(228, 227, 227); */
+    box-shadow:  2px 2px 4px black, inset -1px -1px 1px black;
     box-sizing: border-box; 
     border-radius: 5px;
     margin: 0 15px 30px 0;
-    transition: 0.7s ;
+    transition: 0.7s;
     vertical-align: top;
-    box-shadow: 2px 2px 4px rgb(8, 1, 1);
 }
 
 .projects li:hover, li:focus{
     width: 160px;
     height: 180px;
-    background: rgb(228, 227, 227);
-    color: black;
-
+    /* background: rgb(228, 227, 227);
+    color: black; */
 }
 
 .projects li h4{
@@ -208,17 +202,17 @@ That's why I'm not using classes in the elements of the project class*/
 
 .projects li:hover h4 {
     font-size: 1.6rem;
-    transition: 0.4s;
+    transition-delay: 0.2s;
 
 } 
 
 .projects p {
     visibility: hidden;
-}
+    }
 
 .projects li:hover > p, li:focus > p {
     visibility: visible;
-    transition-delay: 0.2s;
+    transition-delay: 0.5s;
 }
 
 /* Expect structure for projects:
@@ -249,12 +243,11 @@ That's why I'm not using classes in the elements of the project class*/
 .technologies li {
     display: inline-block;
     padding: 10px;
-    background: rgb(47, 52, 55);
-    box-shadow:  2px 2px 4px black, inset -1px -1px 1px black;
+    background: rgb(51, 55, 58);
     box-sizing: border-box; 
     border-radius: 5px;
+    box-shadow: inset 2px 2px 2px black, inset -1px -1px 1px black;
     margin: 0 15px 10px 0;
-
     font-weight: bold;
     font-size: 1em;
     margin-bottom: 10px;
