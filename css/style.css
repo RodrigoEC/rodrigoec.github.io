@@ -100,7 +100,7 @@ main {
     display: inline-block;
     box-sizing: border-box; 
     background: var(--background-dark-grey);
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px 0 0 5px;
     transition: .3s;
     font-weight: bold;
     text-align: center;
