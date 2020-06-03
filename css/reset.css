@@ -54,3 +54,11 @@ a:visited {
 a {
 	text-decoration: none;
 }
+* {
+	box-sizing: border-box;
+}
+
+:focus {
+    outline-color: white;
+    shape-outside: inherit;
+}
