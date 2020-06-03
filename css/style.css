@@ -90,7 +90,7 @@ main {
 .versoes {
     display: flex;
     position: fixed;
-    bottom: 50%;
+    bottom: 30vh;
     right: 0;
 
 }
@@ -111,7 +111,8 @@ main {
 
 .language:hover, .language:focus {
     transform: scale(1.05);
-
+    border: thin solid var(--background-grey);
+    box-shadow: inset -2px -2px 3px var(--background-dark-grey), inset 1px 1px 2px var(--background-dark-grey) ;
     background-color: var(--font-white);
     color: var(--background-dark-grey);
 }
