@@ -1,0 +1,97 @@
+@media (max-width: 1000px){
+
+    main {
+        width: 100%;
+    }
+
+    header {
+        height: 100%;
+    }
+
+    header .center {
+        flex-direction: column;
+    }
+
+    .versoes {
+        justify-content: center;
+        position: static;
+    }
+
+    .versoes a {
+        width: 200px;
+        height: 50px;
+        font-size: 1.6rem;
+    }
+
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-me article {
+        margin-top: 40px;
+    }
+
+    .about-me p {
+        /* text-align: start; */
+        font-size: 1.3rem;
+        max-width: 1000px;
+        max-height: 1000px;
+    }
+
+    .projects-tech {
+        align-items: flex-start;
+    }
+
+    .projects ul {
+        margin-bottom: 80px;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+}
+
+@media (max-width: 767px){
+    .projects-tech {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .projects-tech h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 479px) {
+    :focus {
+        outline: none;
+    }
+    .about-me img {
+        width: 300px;
+    }
+
+    .about-me h4, .about-me p {
+        font-size: 1rem;
+    }
+
+    .projects ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .projects li {
+        text-align: center;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+ 
+
+    .projects li:active, .projects li:hover {
+        outline: none;
+        width: 80%;
+
+    }
+}
