@@ -18,3 +18,4 @@ function decreaseSelectedItemSize(event) {
     itemLi.classList.remove("selected")
 }
 
+// Creating a popUp for the projects items

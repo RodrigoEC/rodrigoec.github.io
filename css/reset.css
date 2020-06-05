@@ -47,18 +47,13 @@ table {
 	border-spacing: 0;
 }
 
-a:visited {
+a:visited, a {
 	color: rgb(228, 227, 227);
+	text-decoration: none;
+
 }
 
-a {
-	text-decoration: none;
-}
+
 * {
 	box-sizing: border-box;
-}
-
-:focus {
-    outline-color: white;
-    shape-outside: inherit;
 }
