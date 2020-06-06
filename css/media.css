@@ -12,12 +12,12 @@
         flex-direction: column;
     }
 
-    .versoes {
+    .languages {
         justify-content: center;
         position: static;
     }
 
-    .versoes a {
+    .languages a {
         width: 200px;
         height: 50px;
         font-size: 1.6rem;
@@ -61,6 +61,26 @@
     .projects-tech h3 {
         text-align: center;
     }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inform {
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-top: 30px ;
+    }
+
+    .footer-links a svg, .footer-links a img {
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 479px) {
@@ -92,6 +112,6 @@
     .projects li:active, .projects li:hover {
         outline: none;
         width: 80%;
-
     }
+    
 }
