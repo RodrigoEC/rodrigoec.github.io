@@ -13,6 +13,10 @@
         flex-direction: column;
     }
 
+    header .center h1 {
+        margin-bottom: 16px;
+    }
+
     .languages {
         justify-content: center;
         position: static;
