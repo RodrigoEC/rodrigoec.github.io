@@ -118,12 +118,13 @@ main {
 
 
 .about-me h2 {
-    font-size: 2em;
+    font-size: 1.6em;
     font-weight: bold;
     margin-bottom: 30px;
 }
 
 .about-me {
+    justify-content: center;
     max-width: 1100px;
     display: flex;
     margin: 40px auto;
@@ -138,6 +139,7 @@ main {
    
    border-radius: 8px;
 }
+
 .about-me article {
     display: flex;
     flex-direction: column; 
@@ -174,19 +176,21 @@ main {
 That's why I'm not using classes in the elements of the project class*/
 .projects-tech {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+
+    gap: 40px;
     margin: 40px 0;
+
+    justify-content: space-around;
+    align-items: center;
 
 }
 
-
-
 .projects ul{
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
     gap: 15px;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* background-color: red; */
 }
 
 
@@ -196,13 +200,15 @@ That's why I'm not using classes in the elements of the project class*/
     margin-bottom: 20px;
     line-height: 1.6em;
 
+    text-align: center;
+
 }
 
 .projects li {
     padding: 10px;
 
-    width: 160px;
-    height: 80px;
+    width: 220px;
+    height: 200px;
 
     background: var(--background-dark-grey);
     box-shadow:  2px 2px 4px black, inset -1px -1px 1px black;
@@ -213,13 +219,10 @@ That's why I'm not using classes in the elements of the project class*/
 
     overflow: hidden;    
     cursor: pointer;
-
 }
 
-.projects li:hover, .projects li:focus {
-    width: 160px;
-    height: 220px;
 
+.projects li:hover, .projects li:focus {
 
     transform: scale(1.2);
 }
@@ -228,30 +231,26 @@ That's why I'm not using classes in the elements of the project class*/
     font-weight: bold;
     font-size: 1.5rem;
 
-    margin-bottom: 10px;
+    border-bottom: thin solid var(--font-white);
+
+    padding-bottom: 10px;
 
     pointer-events:none;
-
-
+    transition: 0.5s;
 
 }
 
-.projects li.selected h4 {
+.projects li:hover h4 {
     font-size: 1.6rem;
-    transition-delay: 0.2s;
-    padding-bottom: 10px;
-    border-bottom: thin solid var(--font-white);
 
 } 
 
 .projects p {
-    visibility: hidden;
-
+    padding-top: 10px;
     pointer-events: none;
 }
 
 .projects li.selected p, li:focus p {
-    visibility: visible;
 
     transition-delay: 0.4s;
 }

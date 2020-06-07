@@ -1,3 +1,4 @@
+
 @media (max-width: 1000px){
 
     main {
@@ -34,7 +35,6 @@
     }
 
     .about-me p {
-        /* text-align: start; */
         font-size: 1.3rem;
         max-width: 1000px;
         max-height: 1000px;
@@ -45,14 +45,12 @@
     }
 
     .projects ul {
-        margin-bottom: 80px;
-        grid-template-columns: 1fr 1fr;
-        gap: 32px;
+        margin-bottom: 40px;
     }
 
 }
 
-@media (max-width: 767px){
+@media (max-width: 840px){
     .projects-tech {
         flex-direction: column;
         align-items: center;
@@ -81,35 +79,42 @@
         height: 40px;
         justify-content: center;
     }
+
+    .projects ul {
+        gap: 32px;
+
+    }
 }
 
-@media (max-width: 479px) {
+
+@media (max-width: 500px) {
     :focus {
         outline: none;
     }
     .about-me img {
-        width: 300px;
+        width: 280px;
+        margin: 0;
     }
 
     .about-me h4, .about-me p {
         font-size: 1rem;
     }
 
+    
     .projects ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
+        grid-template-columns: repeat(1, 1fr);
     }
+
     .projects li {
+        justify-self: center;
         text-align: center;
         margin-bottom: 20px;
-        width: 80%;
+        width: 300px;
     }
 
  
 
-    .projects li:active, .projects li:hover {
+    .projects li:active {
         outline: none;
         width: 80%;
     }
