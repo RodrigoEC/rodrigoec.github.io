@@ -305,6 +305,7 @@ That's why I'm not using classes in the elements of the project class*/
 .hobbies {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 50px 0; 
 }
 
@@ -338,7 +339,8 @@ That's why I'm not using classes in the elements of the project class*/
 
     font-size: 0.8rem;
 
-    box-shadow: 1px 1px 3px black, -1px -1px 2px black;
+    box-sizing: initial;
+    border: thin solid black;
 
     transition: .4s;
 }
@@ -375,10 +377,8 @@ That's why I'm not using classes in the elements of the project class*/
     transform: rotate(90deg);
 }
 
-.post > a img {
-    width: 250px;
-
-    object-fit: cover;
+.post > a img, .post > a {
+    width: inherit;
 }
 
 
