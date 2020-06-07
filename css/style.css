@@ -1,6 +1,6 @@
 html {
     --background-grey: #2f3437; 
-    --background-grey-opacity: #2f34374d;
+    --background-grey-opacity: #2023254d;
     --background-dark-grey: #232729;
     --font-white: #e4e3e3;
 
@@ -340,7 +340,7 @@ That's why I'm not using classes in the elements of the project class*/
     font-size: 0.8rem;
 
     box-sizing: initial;
-    border: thin solid black;
+    /* border: thin solid black; */
 
     transition: .4s;
 }
@@ -351,60 +351,68 @@ That's why I'm not using classes in the elements of the project class*/
 }
 
 
-.image-header {
+.post-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 8px 16px;
 }
 
-.image-header .user {
+.post-header .post-user {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
-.image-header .user img{
+
+.post-user a {
+    display: flex;
+    align-items: center;
+}
+
+.post-user a img {
     width: 30px;
     border-radius: 90px;
-} 
+    margin-right: 12px;
+}
 
-.image-header .user img:hover {
+.post-header .post-user a:hover {
     transform: scale(1.1);
 }
 
-.image-header svg {
+.post-header svg {
     transform: rotate(90deg);
 }
 
-.post > a img, .post > a {
+
+.post > a > img, .post > a {
     width: inherit;
 }
 
 
-.image-footer {
+.post-footer {
     padding: 0 16px 16px;
 }
 
-.image-footer-icons {
+.post-footer-icons {
     display: flex;
     justify-content: space-between;
 
     padding: 8px 0;
 }
 
-.image-icons-together {
+.post-icons-together {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px
 }
 
-.image-footer-likes {
+.post-footer-likes {
     display: flex;
     align-items: center;
 }
 
-.image-footer-likes p {
+.post-footer-likes p {
     margin-left: 5px;
 }
 
