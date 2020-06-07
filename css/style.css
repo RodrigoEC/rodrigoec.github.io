@@ -305,12 +305,12 @@ That's why I'm not using classes in the elements of the project class*/
 .hobbies {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin: 50px 0; 
 }
 
 .hobbies article {
-    max-width: 40%;
+    margin-right: 16px;
 }
 
 .hobbies article a {
@@ -322,13 +322,23 @@ That's why I'm not using classes in the elements of the project class*/
     margin-bottom: 10px;
 }
 
+.photo-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-gallery h2 {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
 
 .photos {
+
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(2, 1fr);
 
-    
 }
 
 
@@ -344,6 +354,7 @@ That's why I'm not using classes in the elements of the project class*/
 
     transition: .4s;
 }
+
 
 .post:hover {
     transform: scale(1.02);
@@ -415,16 +426,6 @@ That's why I'm not using classes in the elements of the project class*/
 .post-footer-likes p {
     margin-left: 5px;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 footer {
