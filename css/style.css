@@ -62,16 +62,14 @@ a:focus {
     outline-color: var(--background-grey);
 }
 
-.icon:hover img, .icon img:focus {
-    transition: 0.3s;
-    transform: scale(1.05);
-    background-color: var(--background-grey-opacity);
-    border-radius: 90px;
+.icon img{
+    width: 50px;
+    margin: 0 1.5rem;
 }
 
-.icon img{
-    width: 3rem;
-    margin: 0 1.5rem;
+.icon img:hover, .icon img:focus {
+    transition: 0.3s;
+    transform: scale(1.2);
 }
 
 main {
@@ -342,7 +340,11 @@ footer {
     font-size: 0.10px;
     margin: 5px;
 
-    
+    transition: .3s;
+}
+
+.links a:hover {
+    transform: scale(1.1);
 }
 
 .footer-links div a svg {
