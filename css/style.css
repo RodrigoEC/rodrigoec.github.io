@@ -174,7 +174,7 @@ main {
 .bottom-line {
     border-bottom: thin solid var(--font-white);
 
-    width: 8vw;
+    width: 100px;
 
     margin: 0 auto;
 }
