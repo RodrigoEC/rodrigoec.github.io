@@ -105,20 +105,23 @@ main {
     
 }
 
-.languages a {
+.languages button {
     padding: 10px;
 
     border-radius: 8px;
     box-shadow: 1px 2px 3px black ;
 
-    background: var(--background-dark-grey);
+    /* background: var(--background-dark-grey); */
     transition: .3s;
 
     font-weight: bold;
     text-align: center;
+
+    /* outline: none; */
+
 }
 
-.languages a:hover, .languages a:focus {
+.languages a:active, .languages a:focus {
     transform: scale(1.05);
 
     border: thin solid var(--background-grey);
