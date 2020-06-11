@@ -81,7 +81,9 @@ a:focus {
 
     cursor: pointer;
 }
-
+br {
+    margin-bottom: 16px;
+}
 
 main {
     display: flex;
@@ -107,21 +109,24 @@ main {
 
 .languages button {
     padding: 10px;
+    width: 200px;
 
     border-radius: 8px;
+    border: none;
     box-shadow: 1px 2px 3px black ;
 
-    /* background: var(--background-dark-grey); */
+    background: var(--background-dark-grey);
+
     transition: .3s;
-
+    cursor: pointer;
     font-weight: bold;
+    color:white;
+    font-size: 1.1rem;
     text-align: center;
-
-    /* outline: none; */
 
 }
 
-.languages a:active, .languages a:focus {
+.languages button:hover, .languages button:focus  {
     transform: scale(1.05);
 
     border: thin solid var(--background-grey);

@@ -51,12 +51,20 @@ const projectBodyEN = [
 const hobbiesTitleEN = "Things I love";
 const hobbiesBodyEN = `Well, besides programming, I really love spanding time reading books, actually I'm 
 making a project about all the <a href="">books that I'm reading this year (2020)</a>.
-</br>
+</p><p>
 I also really love taking pictures. All the process of finding a new subject of creation, 
 trying to take a good picture and finally editing it makes me feel that I'm 
 creating something unique and kinda special because only I could create it. 
-`
+`;
 
+const hobbiesTitleP = "Coisas que eu amo";
+const hobbiesBodyP = `Bom, além de programar, eu amo usar meu tempo lendo livros, tanto que na verdade
+estou criando um projeto pra registrar <a>todas as minhas leituras em 2020</a>.</p>
+
+<p>
+Além disso, eu também amo tirar fotos. Todo os processo de encontrar ou construir ao para tirar foto,
+tentar tirar uma boa foto e finalmente edita-la me da a maravilhosa sensação de que eu estou criando
+algo único e até especial por que somente eu poderia ter criado aquilo da forma que eu criei.`;
 
 
 function changeAboutMe(title, body) {
@@ -88,10 +96,14 @@ function changePageLanguage() {
     changeLang();
 
     if (document.documentElement.lang == "pt-br") {
+        document.querySelector(".languages p").innerHTML = "English Version";
+
         changeAboutMe(aboutMeTitlePT, aboutMeBodyPT);
         changeProject(projectsBodyPT);
-        changeHobbies(hobbiesTitlePT, hobbiesBodyPT);
+        changeHobbies(hobbiesTitleP, hobbiesBodyP);
     } else {
+        document.querySelector(".languages p").innerHTML = "Versão pt-br";
+
         changeAboutMe(aboutMeTitleEN, aboutMeBodyEN);
         changeProject(projectBodyEN);
         changeHobbies(hobbiesTitleEN, hobbiesBodyEN);
