@@ -63,15 +63,15 @@ function changeAboutMe(title, body) {
     let articleTitle = document.querySelector(".about-me h2")
     let articleBody = document.querySelector(".about-me p")
 
-    articleTitle.textContent = title;
-    articleBody.textContent = body 
+    articleTitle.innerHTML = title;
+    articleBody.innerHTML = body 
 }
 
 function changeProject(texts) {
     let projectsBody = document.querySelectorAll(".projects li p")
 
     for(var i = 0; i < projectsBody.length; i++) {
-        projectsBody[i].textContent = texts[i]
+        projectsBody[i].innerHTML = texts[i]
     }
 }
 
@@ -79,8 +79,8 @@ function changeHobbies(title, body) {
     let hobbiesTitle = document.querySelector(".hobbies article h2")
     let hobbiesBody = document.querySelector(".hobbies article p")
 
-    hobbiesTitle.textContent = title;
-    hobbiesBody.textContent = body
+    hobbiesTitle.innerHTML = title;
+    hobbiesBody.innerHTML = body
 }
 
 
