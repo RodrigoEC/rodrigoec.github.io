@@ -25,8 +25,6 @@ const projectsBodyPT = [
     "Projeto criado durante a Ńext Level Week, um evento proporcionado pela RocketSeat"
 ];
 
-const hobbiesTitlePT = "";
-const hobbiesBodyPT = "";
 
 const aboutMeTitleEN = "HI! My name is Rodrigo";
 const aboutMeBodyEN = `I'm 20 years old and currently at the fourth semester of Computer Science on UFCG (Federal
@@ -50,17 +48,16 @@ const projectBodyEN = [
 
 const hobbiesTitleEN = "Things I love";
 const hobbiesBodyEN = `Well, besides programming, I really love spanding time reading books, actually I'm 
-making a project about all the <a href="">books that I'm reading this year (2020)</a>.
+creating a project about <a href="">all my readings this year (2020)</a>.
 </p><p>
 I also really love taking pictures. All the process of finding a new subject of creation, 
 trying to take a good picture and finally editing it makes me feel that I'm 
 creating something unique and kinda special because only I could create it. 
 `;
 
-const hobbiesTitleP = "Coisas que eu amo";
-const hobbiesBodyP = `Bom, além de programar, eu amo usar meu tempo lendo livros, tanto que na verdade
+const hobbiesTitlePT = "Coisas que eu amo";
+const hobbiesBodyPT = `Bom, além de programar, eu amo usar meu tempo lendo livros, tanto que na verdade
 estou criando um projeto pra registrar <a>todas as minhas leituras em 2020</a>.</p>
-
 <p>
 Além disso, eu também amo tirar fotos. Todo os processo de encontrar ou construir ao para tirar foto,
 tentar tirar uma boa foto e finalmente edita-la me da a maravilhosa sensação de que eu estou criando
@@ -100,7 +97,7 @@ function changePageLanguage() {
 
         changeAboutMe(aboutMeTitlePT, aboutMeBodyPT);
         changeProject(projectsBodyPT);
-        changeHobbies(hobbiesTitleP, hobbiesBodyP);
+        changeHobbies(hobbiesTitlePT, hobbiesBodyPT);
     } else {
         document.querySelector(".languages p").innerHTML = "Versão pt-br";
 
