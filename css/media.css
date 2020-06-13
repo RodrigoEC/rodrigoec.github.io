@@ -57,6 +57,11 @@
 
     }
 
+    .backgroundStuff {
+        top: -750px;
+        height: 300px;
+    }
+
     .hobbies article {
         margin-bottom: 32px 
     }
@@ -121,6 +126,10 @@
         grid-row: 2/2;
         grid-column: 1 / 1;
     }
+    .backgroundStuff {
+        top: -1200px;
+    }
+    
 }
 
 
@@ -154,5 +163,10 @@
     .projects li:active {
         outline: none;
         width: 80%;
+    }
+
+    .backgroundStuff {
+        height: 400px;
+        top: -1350px;
     }
 }   

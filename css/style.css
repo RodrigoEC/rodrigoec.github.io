@@ -197,12 +197,14 @@ main {
 
 That's why I'm not using classes in the elements of the project class*/
 
+
+
 .projects-tech {
     display: flex;
     justify-content: space-around;
     align-items: center;
     
-    margin: 40px 0;
+    margin: 80px 0;
 }
 
 .projects ul{
@@ -313,7 +315,7 @@ That's why I'm not using classes in the elements of the project class*/
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 50px 0; 
+    margin: 80px 0; 
 }
 
 .hobbies article {
@@ -434,6 +436,14 @@ That's why I'm not using classes in the elements of the project class*/
     margin-left: 5px;
 }
 
+
+.backgroundStuff {
+    height: 200px;
+    background-color: rgb(28, 30, 32);
+    position: relative;
+    top: -500px;
+    z-index: -1;
+}
 
 footer {
     background: rgb(28, 30, 32);
