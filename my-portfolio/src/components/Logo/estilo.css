@@ -1,0 +1,26 @@
+.logo_title {
+    display: flex;
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.logo_title span {
+    /* color: var(--background-color); */
+    color: white;
+    background-color: var(--my-black);
+    padding: .3rem 0;
+    border-radius: 2px;
+
+}
+
+.logo_title span::after {
+    margin: 0 .5rem;
+    animation: color-change 0.7s infinite alternate;
+    content: '|'
+}
+
+@keyframes color-change {
+    /* 0%, 49%{ color: var(--background-color); } */
+    0%, 49%{ color: white; }
+    50%, 100% { color: var(--my-black)}
+}
