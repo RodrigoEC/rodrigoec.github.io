@@ -7,7 +7,7 @@ export default class AboutMe extends Component {
     render() {
         return (
             <section id='about-me' className='about-me-section'>
-                <img src={eu} className='about-me-photo' />
+                <img src={eu} className='about-me-photo' alt='Me smiling'/>
                 <article className='about-me-article'>
                     <h2 className='about-me-title'>HI! My name is Rodrigo</h2>
 

@@ -7,7 +7,6 @@
     height: fit-content;
     max-width: 1080px;
     padding: 1rem;
-    box-shadow: 1px 1px 15px rgba(192, 190, 190, 0.116);
 }
 
 .about-me-article {
@@ -16,7 +15,6 @@
     gap: 1rem;
 
     font-size: 1.1rem;
-    line-height: 150%;
 }
 
 .about-me-title {

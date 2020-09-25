@@ -1,3 +1,9 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
 .projects-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -5,6 +11,7 @@
     justify-items: center;
     max-width: 1080px;
     align-items: center;
+    row-gap: 3rem;
 }
 
 .project-item {
@@ -14,12 +21,12 @@
     gap: 1rem;
 
     box-sizing: border-box;
-    
-    height: 12rem;
-    max-width: 25rem;
-    
-    border: thin solid white;
     padding: 1rem 1.5rem;
+    height: 12rem;
+    width: 25rem;
+    
+    background-color: var(--grey);
+    border: 2px solid var(--low_opacity-white);
 }
 
 .project-title {
@@ -27,12 +34,19 @@
     font-size: 1.5rem;
 }
 
+.project-item-division {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(192, 181, 181, 0.212);
+}
+
 .project-technologies {
     display: flex;
     gap: 1rem;
 }
 
-.project-technologies li:not(:last-child()):after {
+.project-technology:not(:last-child)::after {
     content: '-';
+    margin-left: 1rem;
     color: white;
 }

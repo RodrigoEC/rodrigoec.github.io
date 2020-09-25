@@ -6,7 +6,7 @@ export const projects = [
     },
     {
         title: "LabRua",
-        description: "Andromedev Project that I'm participating to create a site for the organization LabRua",
+        description: "Andromedev Project that I'm participating to create a site to the organization LabRua",
         technologies: ["Prismic.io", "React", "Gatsby"]
     }
 ];
