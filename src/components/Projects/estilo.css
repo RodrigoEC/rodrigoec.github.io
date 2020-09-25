@@ -1,0 +1,38 @@
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    max-width: 1080px;
+    align-items: center;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+    box-sizing: border-box;
+    
+    height: 12rem;
+    max-width: 25rem;
+    
+    border: thin solid white;
+    padding: 1rem 1.5rem;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.project-technologies {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-technologies li:not(:last-child()):after {
+    content: '-';
+    color: white;
+}

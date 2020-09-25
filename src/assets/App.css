@@ -1,0 +1,28 @@
+:root {
+  --black: #262629;
+  --background-color: #262629;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'montserrat';
+}
+
+
+main {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--background-color);
+  min-height: 100vh;
+  padding: 4rem 0;
+
+  font-weight: lighter;
+  color: white;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
