@@ -16,12 +16,12 @@ function App() {
       <Cabecalho />
       <main>
         <div>
-
           <AboutMe />
+          <div className='bottom-line'></div>
           <Projects projects={projects} />
+          <div className='bottom-line'></div>
           <ThingsILove />
         </div>
-
       </main>
     </div>
   );
