@@ -14,10 +14,10 @@ class Cabecalho extends Component {
          <section className="cabecalho">
             <Logo/>
             <div className="cabecalho-social-media-container">
-               <img src={instagramIcon} className="cabecalho-social-media-item"/>
-               <img src={githubIcon} className="cabecalho-social-media-item"/>
-               <img src={linkedinIcon} className="cabecalho-social-media-item"/>
-               <img src={emailIcon} className="cabecalho-social-media-item"/>
+               <img src={instagramIcon} className="cabecalho-social-media-item" alt='Instagram icon'/>
+               <img src={githubIcon} className="cabecalho-social-media-item" alt='Github icon'/>
+               <img src={linkedinIcon} className="cabecalho-social-media-item" alt='Linkedin icon'/>
+               <img src={emailIcon} className="cabecalho-social-media-item" alt='e-mail Icon' />
             </div>
          </section>
       );
