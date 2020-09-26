@@ -3,7 +3,7 @@ import Menu from './components/Menu'
 import Cabecalho from './components/cabecalho'
 import AboutMe from './components/AboutMe'
 import ThingsILove from './components/ThingsILove'
-
+import Footer from './components/Footer'
 import './assets/App.css';
 import Projects from './components/Projects/Projects';
 import { projects } from './data/projects'
@@ -23,6 +23,7 @@ function App() {
           <ThingsILove />
         </div>
       </main>
+      <Footer/>
     </div>
   );
 }
