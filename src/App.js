@@ -2,6 +2,7 @@ import React from 'react';
 import Menu from './components/Menu'
 import Cabecalho from './components/cabecalho'
 import AboutMe from './components/AboutMe'
+import ThingsILove from './components/ThingsILove'
 
 import './assets/App.css';
 import Projects from './components/Projects/Projects';
@@ -18,6 +19,7 @@ function App() {
 
           <AboutMe />
           <Projects projects={projects} />
+          <ThingsILove />
         </div>
 
       </main>
