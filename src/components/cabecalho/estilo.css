@@ -1,0 +1,29 @@
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    background-image: url('../../assets/img/dot.svg');
+    background-size: 20px;
+    /* background-color: var(--background-color); */
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cabecalho-social-media-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.cabecalho-social-media-item {
+    width: 3rem;
+    transition: all .1s ease;
+}
+
+.cabecalho-social-media-item:hover {
+    transform: scale(1.05);
+    border-bottom: thin solid var(--black) ;
+}

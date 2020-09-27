@@ -1,0 +1,31 @@
+.menu-nav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+
+    width: 100vw;
+
+    background-color: var(--black);
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    
+    max-width: 1080px;
+    height: 3rem;
+
+    /* background-color: red; */
+}
+
+.menu-item a{
+    color: white;
+    transition: 1s ease;
+
+}
+
+.menu-item a:hover{
+    border-bottom: thin solid white;
+}
