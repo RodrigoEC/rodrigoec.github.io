@@ -7,7 +7,7 @@ import githubIcon from '../../assets/img/github-icon-white.svg'
 
 function Footer() {
     return (
-        <div className="footer-container">
+        <div id='contact' className="footer-container">
 
             <div className="footer">
 
