@@ -2,7 +2,7 @@ export const projects = [
     {
         title: "ePol",
         description: "Project of the SPlab laboratory in association with the Federal Police of Brazil.",
-        technologies: ["Docker", "Python", "Flask"]
+        technologies: ["Docker", "Python", "Flask", "React"]
     },
     {
         title: "LabRua",
