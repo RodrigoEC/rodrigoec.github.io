@@ -1,40 +1,40 @@
-import React from 'react';
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route, Redirect, } from "react-router-dom";
 
-import Menu from './components/Menu'
+import { Header } from './components/Header';
 
-import Cabecalho from './components/cabecalho'
+import { Experiences } from './views/Experiences';
+import { Contact } from './views/Contact';
+import { About } from './views/About';
 
-import AboutMe from './components/AboutMe'
-
-import ThingsILove from './components/ThingsILove'
-
-import Footer from './components/Footer'
-
-
-import Projects from './components/Projects/Projects';
-
-import { projects } from './data/projects'
-
-import './assets/App.css';
+import './styles/reset.css';
+import './styles/App.css';
+import { useTheme } from './context/theme.context';
 
 function App() {
-  return (
-    <div className="App">
-      <Menu />
-      <header>
+  const { theme } = useTheme()
+  const pages = [
+    { name: 'about', component: About, path: '/' },
+    { name: 'exp', component: Experiences, path: '/exp' },
+    { name: 'contact', component: Contact, path: '/contact' },
+  ]
 
-        <Cabecalho />
-      </header>
-      <main>
-        <div>
-          <AboutMe />
-          <div className='bottom-line'></div>
-          <Projects projects={projects} />
-          <div className='bottom-line'></div>
-          <ThingsILove />
-        </div>
-      </main>
-      <Footer/>
+
+  return (
+    <div 
+      className="App"
+      style={{'background-color': theme.white}}>
+        <Router>
+          <Header />
+          <div
+            className="body"
+            style={{'color': theme.black}}>
+            <Switch>
+              {pages.map((page) => <Route path={page.path} exact component={page.component} />)}
+              <Route path='*' > <Redirect to='/' /> </Route>
+            </Switch>
+          </div>
+        </Router>
     </div>
   );
 }
