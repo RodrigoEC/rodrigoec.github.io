@@ -1,40 +1,29 @@
-import React from 'react';
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 
-import Menu from './components/Menu'
+import { Experiences } from './views/Experiences';
+import { Contact } from './views/Contact';
+import { About } from './views/About';
 
-import Cabecalho from './components/cabecalho'
-
-import AboutMe from './components/AboutMe'
-
-import ThingsILove from './components/ThingsILove'
-
-import Footer from './components/Footer'
-
-
-import Projects from './components/Projects/Projects';
-
-import { projects } from './data/projects'
-
-import './assets/App.css';
+import './styles/reset.css';
+import './styles/App.css';
 
 function App() {
   return (
     <div className="App">
-      <Menu />
-      <header>
-
-        <Cabecalho />
-      </header>
-      <main>
-        <div>
-          <AboutMe />
-          <div className='bottom-line'></div>
-          <Projects projects={projects} />
-          <div className='bottom-line'></div>
-          <ThingsILove />
-        </div>
-      </main>
-      <Footer/>
+      <Router>
+        <Switch>
+          <Route path='/' exact component={About}/>
+          <Route path='/exp' component={Experiences}/>
+          <Route path='/contact' component={Contact}/>
+          <Route path='*' > <Redirect to='/'/> </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

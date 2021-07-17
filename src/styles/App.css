@@ -1,0 +1,11 @@
+:root {
+  --white: #EFEFEF;
+  --black: #131610;
+  --red: #A44A3F;
+  --font-white: #F5F5F5;
+}
+
+.App {
+  background-color: var(--white);
+  min-height: 100vh;
+}
