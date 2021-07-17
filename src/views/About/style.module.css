@@ -6,11 +6,20 @@
 
 }
 
-.aboutMe img {
+
+.aboutMe a {
+    width: 40%
+}
+
+.aboutMe a img {
     border-radius: 100%;
-    width: 40%;
 }
 
 .love > div {
     width: 50%;
+}
+
+.love .title {
+    display: flex;
+    gap: 1rem;
 }
