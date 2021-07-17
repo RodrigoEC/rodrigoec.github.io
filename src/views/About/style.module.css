@@ -1,0 +1,16 @@
+
+.aboutMe {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+}
+
+.aboutMe img {
+    border-radius: 100%;
+    width: 40%;
+}
+
+.love > div {
+    width: 50%;
+}

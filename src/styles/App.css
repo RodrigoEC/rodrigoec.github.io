@@ -8,9 +8,29 @@
 }
 
 .App {
-  background-color: rgb(221, 0, 0);
-  min-height: 200vh;
+  min-height: 100vh;
 
 
   font-family: 'Roboto Mono', monospace;
+}
+
+.body {
+  padding: 4rem 2rem;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 6rem;
 }

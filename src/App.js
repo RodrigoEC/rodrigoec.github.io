@@ -9,9 +9,10 @@ import { About } from './views/About';
 
 import './styles/reset.css';
 import './styles/App.css';
-import ThemeProvider from './context/theme.context';
+import { useTheme } from './context/theme.context';
 
 function App() {
+  const { theme } = useTheme()
   const pages = [
     { name: 'about', component: About, path: '/' },
     { name: 'exp', component: Experiences, path: '/exp' },
@@ -20,16 +21,20 @@ function App() {
 
 
   return (
-    <div className="App">
-      <ThemeProvider>
+    <div 
+      className="App"
+      style={{'background-color': theme.white}}>
         <Router>
           <Header />
-          <Switch>
-            {pages.map((page) => <Route path={page.path} exact component={page.component} />)}
-            <Route path='*' > <Redirect to='/' /> </Route>
-          </Switch>
+          <div
+            className="body"
+            style={{'color': theme.black}}>
+            <Switch>
+              {pages.map((page) => <Route path={page.path} exact component={page.component} />)}
+              <Route path='*' > <Redirect to='/' /> </Route>
+            </Switch>
+          </div>
         </Router>
-      </ThemeProvider>
     </div>
   );
 }
