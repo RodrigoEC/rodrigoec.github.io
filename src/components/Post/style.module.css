@@ -70,3 +70,14 @@
     opacity: 0;
 }
 
+@media screen and (max-width: 550px) {
+    .container {
+        width: 130px;
+    }
+
+    .container::before {
+        margin-top: .5rem;
+    }
+
+}
+
