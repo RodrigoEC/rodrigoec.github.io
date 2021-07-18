@@ -50,13 +50,13 @@
 @media screen and (max-width: 750px) {
     .container  {
         overflow: hidden;
-        height: 4rem;
+        height: 5.5rem;
 
     }
 
     .links {
         letter-spacing: 1px;
-        font-size: 13px;
+        font-size: 14px;
         gap: 1rem;
     }
 }

@@ -72,6 +72,8 @@
 @media screen and (max-width: 550px) {
     .container {
         width: 90px;
+        padding: 3px;
+
     }
 
     .container::before {
@@ -79,8 +81,16 @@
     }
 
     .cover {
-        width: 89%;
-        height: 89%;
+        width: 90%;
+        height: 90%;
+    }
+
+    .container::before {
+        width: 120%;
+    }
+    
+    .container::after {
+        height: 120%;
     }
 
 }
