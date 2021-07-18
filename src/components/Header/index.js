@@ -20,7 +20,7 @@ export const Header = () => {
     return (
         <div
             className={style.container}
-            style={{ 'background-color': theme.white }}>
+            style={{ 'background-color': theme.background }}>
 
             <div className={`${style.logoContainer} ${isActive ? style.logoActive : ''}`}>
                 <Link to='/'>
@@ -33,7 +33,7 @@ export const Header = () => {
                         <li key={page.name}>
                             <Link
                                 to={page.path}
-                                style={{ color: theme.black }}
+                                style={{ color: theme.font }}
                             >{page.name}</Link>
                         </li>
                     )

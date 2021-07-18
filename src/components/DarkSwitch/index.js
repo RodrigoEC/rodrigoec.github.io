@@ -10,11 +10,11 @@ export const DarkSwitch = () => {
         <div 
             className={`${style.container} ${ isActive ? style.active : ''}`}
             onClick={handleSwitch}
-            style={{'background-color': theme.black}}
+            style={{'background-color': theme.switchBackground}}
             >
             <div
                 className={`${style.switch}`}
-                style={{'background-color': theme.white}}
+                style={{'background-color': theme.switch}}
             ></div>
         </div>
     )

@@ -23,12 +23,12 @@ function App() {
   return (
     <div 
       className="App"
-      style={{'background-color': theme.white}}>
+      style={{'background-color': theme.background}}>
         <Router>
           <Header />
           <div
             className="body"
-            style={{'color': theme.black}}>
+            style={{'color': theme.font}}>
             <Switch>
               {pages.map((page) => <Route path={page.path} exact component={page.component} />)}
               <Route path='*' > <Redirect to='/' /> </Route>
