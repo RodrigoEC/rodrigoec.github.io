@@ -1,10 +1,27 @@
 import React from 'react'
 
+import Coffee from '../../assets/posts/coffee.jpeg'
+import Cake from '../../assets/posts/cake.jpeg'
+import Foot from '../../assets/posts/foot.jpeg'
+import Jar from '../../assets/posts/jar.jpeg'
+import Woman from '../../assets/posts/woman.jpeg'
+
 import { ReactComponent as Heart } from '../../assets/heart.svg'
+import { Post } from '../../components/Post'
 
 import style from './style.module.css'
 
 export const About = () => {
+    const posts = [
+        { name: 'woman', link: 'https://www.instagram.com/p/B6ssVdphu2G/?utm_source=ig_web_copy_link', photo: Woman, alt: 'Photo of a woman with distorted colors'},
+        { name: 'coffee', link: 'https://www.instagram.com/p/B5xnZh1A88G/', photo: Coffee, alt: 'Photo of a coffee taked from above'},
+        { name: 'cake', link: 'https://www.instagram.com/p/CM8bS5ChwG_/', photo: Cake, alt: 'Photo of a driver from the back seat perspective'},
+        { name: 'Jar', link: 'https://www.instagram.com/p/B51XK8NgVq9/', photo: Jar, alt: 'Photo of a Jar that has flowers inside'},
+        { name: 'Foot', link: 'https://www.instagram.com/p/CIv3kDlhfcq/', photo: Foot, alt: 'Photo of the foot of a little baby'},
+    ]
+
+
+
     return (
         <div >
             <section className={style.aboutMe}>
@@ -43,9 +60,10 @@ export const About = () => {
                         So..who am I? I’m just a creative person that is trying to make life a little bit easier.
                     </p>
                 </div>
-                <div>
+                <ul className={style.posts}>
 
-                </div>
+                    { posts.map((post) => <li className={style.post}><Post post={post}/></li>)}
+                </ul>
             </section>
 
 

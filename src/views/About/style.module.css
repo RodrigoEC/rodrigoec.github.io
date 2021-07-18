@@ -1,7 +1,7 @@
 
 .aboutMe {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     align-items: center;
 
 }
@@ -15,11 +15,29 @@
     border-radius: 100%;
 }
 
+.love {
+    display: flex;
+}
+
 .love > div {
+    width: 50%;
+}
+
+.love > ul {
     width: 50%;
 }
 
 .love .title {
     display: flex;
     gap: 1rem;
+}
+
+.love .posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.post {
 }

@@ -24,7 +24,7 @@ export const Header = () => {
 
             <div className={isActive ? style.logoActive : ''}>
                 <Link to='/'>
-                    <Logo />
+                    <Logo className={style.logo}/>
                 </Link>
             </div>
             <ul className={style.links}>

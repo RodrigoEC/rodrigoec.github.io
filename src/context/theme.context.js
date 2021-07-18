@@ -3,12 +3,14 @@ import React, { createContext, useContext, useState, useCallback } from 'react'
 const ThemeContext = createContext()
 const themeLight = {
     black: '#131610',
-    white: '#EFEFEF'
+    white: '#EFEFEF',
+    border: '#00000031',
 }
 
 const themeDark = {
     black: '#EFEFEF',
-    white: '#131610'
+    white: '#131610',
+    border: '#ffffff31',
 }
 
 
