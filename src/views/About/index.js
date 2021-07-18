@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Coffee from '../../assets/posts/coffee.jpeg'
-import Cake from '../../assets/posts/cake.jpeg'
-import Foot from '../../assets/posts/foot.jpeg'
-import Jar from '../../assets/posts/jar.jpeg'
-import Woman from '../../assets/posts/woman.jpeg'
+import Coffee from '../../assets/posts/coffee.png'
+import Cake from '../../assets/posts/cake.png'
+import Foot from '../../assets/posts/foot.png'
+import Jar from '../../assets/posts/jar.png'
+import Woman from '../../assets/posts/woman.png'
 
 import { ReactComponent as Heart } from '../../assets/heart.svg'
 import { Post } from '../../components/Post'
