@@ -1,5 +1,4 @@
 
-
 .container {
     display: flex;
     flex-direction: column;
@@ -22,7 +21,6 @@
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 1rem;
-
 }
 
 .div {
@@ -34,6 +32,7 @@
 
 .techs {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
 }
@@ -43,3 +42,16 @@
     font-weight: bold;
 }
 
+@media screen and (max-width: 1025px) {
+    .container {
+        height: 300px;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .container {
+        height: fit-content;
+        max-width: 350px;
+    }
+}

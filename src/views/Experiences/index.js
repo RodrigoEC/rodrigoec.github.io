@@ -23,9 +23,13 @@ export const Experiences = () => {
 
     return (
         <div>
+            <div className={style.hi}>
+                <h1>Hi again!</h1>
+                <p>This page is like the summary of my professional experiences in college.</p>
+            </div>
             <section className={style.inCollege}>
                 <div className={style.text}>
-                    <h1 style={{ color: theme.title }}>In College</h1>
+                    <h1 style={{ color: theme.title }}>College</h1>
                     <p>
                         Well, because of the pandemic the concept of wich semester I am it’s
                         a little abstract haha, so based on the disciplines that I already
@@ -70,7 +74,7 @@ export const Experiences = () => {
             </section>
             <section className={style.projectsContainer}>
                 <div className={style.text}>
-                    <h1>Some projects that I worked on</h1>
+                    <h1>Projects that I've worked on</h1>
                     <p>
                         here are some of the projects that I worked on and that are some of the highlights.
 

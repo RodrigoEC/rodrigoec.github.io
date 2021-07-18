@@ -74,6 +74,16 @@
     }  
 }
 
+@media screen and (max-width: 800px) {
+    .love .title {
+        margin-bottom: 2rem;
+    }
+    
+    .love .title h1 {
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 750px) {
     .container {
         display: none;
