@@ -6,7 +6,6 @@ import style from './style.module.css'
 
 export const Post = ({ post }) => {
     const { isActive, theme } = useTheme()
-    console.log(theme)
     const { photo, alt, link } = post
 
     return (

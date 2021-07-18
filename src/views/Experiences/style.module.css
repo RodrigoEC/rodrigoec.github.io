@@ -144,12 +144,16 @@
     .programming {
         display: block;
     }
+
+    .programming h2 {
+        margin-top: 2rem;
+    }
     
     .programming p {
         text-align: center;
     }
 
-    h1 {
+    h1, h2 {
         text-align: center;
     }
 
