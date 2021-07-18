@@ -1,20 +1,24 @@
 import React, { createContext, useContext, useState, useCallback } from 'react'
 
 const colors = {
-    black: '#131610',
+    black: '#282E31',
+    black2: 'rgb(77 93 98 / 77%)',
     white: '#EFEFEF',
-    'opaque-black': '#00000031',
+    'opaque-black': '#282E3131',
     'grayish-green': '#ffffff31',
+    grey: '#d9d9d9',
+
 
 }
 
 
 const ThemeContext = createContext()
 const themeLight = {
-    border: colors['opaque-black'],
+    border: colors.black2,
     switchBackground: colors.black,
     switch: colors.white,
     background: colors.white,
+    title: colors.black,
     font: colors.black,
 }
 
@@ -23,8 +27,8 @@ const themeDark = {
     switchBackground: colors.white,
     switch: colors.black,
     background: colors.black,
-    font: colors.white,
-
+    title: colors.white,
+    font: colors.grey,
 }
 
 

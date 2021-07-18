@@ -9,9 +9,12 @@ import Woman from '../../assets/posts/woman.jpeg'
 import { ReactComponent as Heart } from '../../assets/heart.svg'
 import { Post } from '../../components/Post'
 
+import { useTheme } from '../../context/theme.context'
+
 import style from './style.module.css'
 
 export const About = () => {
+    const { theme } = useTheme()
     const posts = [
         { name: 'woman', link: 'https://www.instagram.com/p/B6ssVdphu2G/?utm_source=ig_web_copy_link', photo: Woman, alt: 'Photo of a woman with distorted colors'},
         { name: 'coffee', link: 'https://www.instagram.com/p/B5xnZh1A88G/', photo: Coffee, alt: 'Photo of a coffee taked from above'},
@@ -33,7 +36,7 @@ export const About = () => {
                         alt='The avatar of my github profile'/>
                 </a>
                 <div className={style.text}>
-                    <h1>Hi!</h1>
+                    <h1 style={{ color: theme.title}}>Hi!</h1>
                     <p>
                         I’m Rodrigo, a Computer Science student at the fifth semester at the Federal
                         University of Campina Grande (UFCG) in Brazil.
@@ -47,7 +50,7 @@ export const About = () => {
             <section className={style.love}>
                 <div className={style.text}>
                     <div className={style.title}>
-                        <h1>What I love</h1>
+                        <h1 style={{ color: theme.title}}>What I love</h1>
                         <Heart className={style.heart}/>
                     </div>
                     <p>
