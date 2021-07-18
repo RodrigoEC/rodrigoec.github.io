@@ -1,0 +1,18 @@
+
+.inCollege {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    width: 100%;
+
+}
+.inCollege .text {
+    width: 65%;
+    max-width: 800px;
+}
+
+.inCollege .icon {
+    width: 35%;
+    max-width: 400px;
+    height: fit-content;
+}
