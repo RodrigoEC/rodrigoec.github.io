@@ -79,5 +79,10 @@
         margin-top: .5rem;
     }
 
+    .cover {
+        width: 89%;
+        height: 89%;
+    }
+
 }
 
