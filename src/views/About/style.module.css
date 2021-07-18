@@ -19,11 +19,7 @@
     display: flex;
 }
 
-.love > div {
-    width: 50%;
-}
-
-.love > ul {
+.love > div, .love > ul {
     width: 50%;
 }
 
@@ -39,5 +35,47 @@
     justify-content: center;
 }
 
-.post {
+@media screen and (max-width: 1025px) {
+    p {
+        text-align: justify;
+    }
+
+    .aboutMe, .love {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutMe a {
+        width: fit-content;
+        max-width: 100%;
+    }
+    
+
+    .love > div, .love > ul {
+        width: 100%;
+    }
+
+    .love .title {
+        display: flex;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .love .text {
+        margin-bottom: 4rem;
+    }
+
+    .logo {
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        display: none;
+    }
+
+    .aboutMe a img {
+       width: 100%;
+    }
 }

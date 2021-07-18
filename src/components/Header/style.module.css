@@ -30,3 +30,25 @@
 .logoActive {
     filter: invert(1);
 }
+
+@media screen and (max-width: 1025px) {
+    .container {
+        justify-content: space-evenly;
+    }
+
+    .logoContainer {
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        padding: 0rem;
+    }    
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        display: none;
+    }    
+}

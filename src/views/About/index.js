@@ -20,12 +20,10 @@ export const About = () => {
         { name: 'Foot', link: 'https://www.instagram.com/p/CIv3kDlhfcq/', photo: Foot, alt: 'Photo of the foot of a little baby'},
     ]
 
-
-
     return (
         <div >
             <section className={style.aboutMe}>
-                <a href='https://github.com/rodrigoec' target='_blank'>
+                <a href='https://github.com/rodrigoec' className={style.photo}target='_blank'>
 
                     <img src='https://avatars.githubusercontent.com/u/42751604?v=4' />
                 </a>
@@ -42,7 +40,7 @@ export const About = () => {
                 </div>
             </section>
             <section className={style.love}>
-                <div>
+                <div className={style.text}>
                     <div className={style.title}>
                         <h1>What I love</h1>
                         <Heart/>
