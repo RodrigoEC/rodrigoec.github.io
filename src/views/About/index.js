@@ -23,9 +23,14 @@ export const About = () => {
     return (
         <div >
             <section className={style.aboutMe}>
-                <a href='https://github.com/rodrigoec' className={style.photo}target='_blank'>
+                <a  
+                    href='https://github.com/rodrigoec'
+                    className={style.photo}
+                    target='_blank'
+                    rel='noreferrer'>
 
-                    <img src='https://avatars.githubusercontent.com/u/42751604?v=4' />
+                    <img src='https://avatars.githubusercontent.com/u/42751604?v=4'
+                        alt='The avatar of my github profile'/>
                 </a>
                 <div className={style.text}>
                     <h1>Hi!</h1>
@@ -33,9 +38,9 @@ export const About = () => {
                         I’m Rodrigo, a Computer Science student at the fifth semester at the Federal
                         University of Campina Grande (UFCG) in Brazil.
                     </p><p>
-                        When it comes to my professional self I like to consider myself a Software Engineet
+                        When it comes to my professional self I like to consider myself a Software Engineer
                         in the making slash Researcher slash just a curious person that likes to solve
-                        problems and create thinge.
+                        problems and create things.
                     </p>
                 </div>
             </section>
@@ -49,13 +54,13 @@ export const About = () => {
                         Quoting Dr. Ana Cláudia Quintana, “I think is sweeter to define
                         ourselves by the things we love”, therefore, who am I?
                     </p><p>
-                        I love to create new things and that translates itself in really different
+                        well, I love to create new things and that translates itself in really different
                         areas of my life. For example, I went to Science Computer college because I
                         wanted to create solutions to problems of the day-to-day life. I also love
-                        to take photographs, create the scene in my head and try to make it come to
+                        to take photos, create the scene in my head and try to make it come to
                         life is one of the things that I’m obsessed about.
                     </p><p>
-                        So..who am I? I’m just a creative person that is trying to make life a little bit easier.
+                        So...who am I? I’m just a creative person that is trying to make life a little bit easier.
                     </p>
                 </div>
                 <ul className={style.posts}>

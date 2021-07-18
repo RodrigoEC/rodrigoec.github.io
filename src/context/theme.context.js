@@ -21,7 +21,7 @@ export default function ThemeProvider({ children }) {
     const handleSwitch = useCallback(() => {
         setTheme(theme === themeLight ? themeDark : themeLight)
         setIsActive(!isActive)
-    })
+    }, [setTheme, setIsActive, isActive, theme])
 
     const value = {
         isActive,

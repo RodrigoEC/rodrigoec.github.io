@@ -1,5 +1,5 @@
 import React from 'react'
-import Photo from '../../assets/posts/jar.jpeg'
+
 import { useTheme } from '../../context/theme.context'
 
 import style from './style.module.css'
@@ -12,6 +12,7 @@ export const Post = ({ post }) => {
     return (
         <a  
             href={link}
+            rel='noreferrer'
             target='_blank'
             className={`${style.container} ${isActive ? style.active : ''}`}
             style={{

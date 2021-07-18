@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import React from 'react'
 import { useTheme } from '../../context/theme.context'
 
 import style from './style.module.css'
