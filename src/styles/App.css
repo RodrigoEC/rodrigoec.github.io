@@ -76,7 +76,7 @@ section {
     font-weight: bold;
   }
 
-  p {
+  p, span {
     font-size: 14px;
   }
 

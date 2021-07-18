@@ -1,0 +1,23 @@
+
+.container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.container div {
+    display: inherit;
+    gap: .5rem;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 550px) {
+    .title {
+        font-size: 14px;
+    }
+}
