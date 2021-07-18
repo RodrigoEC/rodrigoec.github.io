@@ -1,16 +1,16 @@
 import React from 'react'
-import { useTheme } from '../../context/theme.context'
 
 import style from './style.module.css'
 
 export const ProjectCard = ({ project }) => {
-    const { isActive, theme } = useTheme()
-    const { title, technologies, description, } = project
+    const { title, technologies, description, link  } = project
     
     return (
-        <div 
+        <a  
+            href={link}
+            target='_blank'
+            rel='noreferrer'
             className={style.container}
-
             >
             <h4 className={style.title}>{title}</h4>
             <p className={style.desc}>{description}</p>
@@ -18,6 +18,6 @@ export const ProjectCard = ({ project }) => {
             <ul className={style.techs}>
                 {technologies.map((tech) => <li><span>{tech}</span></li>)}
             </ul>
-        </div>
+        </a>
     )
 }

@@ -13,19 +13,19 @@ export const Experiences = () => {
     const { theme } = useTheme()
 
     const projects = [
-        { title: 'ePol', technologies: ['Python', 'Flask'], description: 'Project of the Federal Police of Brazil at UFCG. I worked with both data analysis and frontend in the project.' },
-        { title: 'LabRua', technologies: ['React', 'Gatsby', 'JavaScript'], description: 'I’m remaking the design and implementing the new site of the Organization LabRua.' },
-        { title: 'HoCo', technologies: ['React', 'JavaScript'], description: 'HoCo is an application created to support Computer Science students at UFCG when it comes to the management of their complementary activities.' },
-        { title: 'AnonymousCents', technologies: ['Python', 'GoogleAPIs'], description: 'The first application that I create with a friend in 2020 so we could sove a grade disponibility problem. I was really fun to create it.' },
-        { title: 'Hacktoberfest 2020', technologies: ['JavaScript', 'HTML', 'CSS'], description: 'I was a voluntiers at the hacktoberfest event of OpenDevUFCG. At the event I collaborated with the implementation of the event site.' },
-        { title: 'Andromedev 2020', technologies: ['React', 'Gatsby', 'JavaScript'], description: 'I had the privilege to participate of this event both as a andromedev apprentice in the project of the organization LabRua and as an organizer of the event' },
+        { title: 'ePol', technologies: ['Python', 'Flask'], description: 'Project of the Federal Police of Brazil at UFCG. I worked with both data analysis and frontend in the project.', link: 'http://www.computacao.ufcg.edu.br/graduacao/informes/projetoepolelancadocomsolenidadeembrasilia' },
+        { title: 'LabRua', technologies: ['React', 'Gatsby', 'JavaScript'], description: 'I’m remaking the design and implementing the new site of the Organization LabRua.', link: 'https://www.labrua.org/sobre/' },
+        { title: 'HoCo', technologies: ['React', 'JavaScript'], description: 'HoCo is an application created to support Computer Science students at UFCG when it comes to the management of their complementary activities.', link: 'https://github.com/Guardians-DSC/HoCo' },
+        { title: 'AnonymousCents', technologies: ['Python', 'GoogleAPIs'], description: 'The first application that I create with a friend in 2020 so we could sove a grade disponibility problem. I was really fun to create it.', link: 'https://github.com/BiggerThanOurselves/anonymousCents' },
+        { title: 'Hacktoberfest 2020', technologies: ['JavaScript', 'HTML', 'CSS'], description: 'I was a voluntiers at the hacktoberfest event of OpenDevUFCG. At the event I collaborated with the implementation of the event site.', link: 'https://opendevufcg.org/hacktoberfest/' },
+        { title: 'Andromedev 2020', technologies: ['React', 'Gatsby', 'JavaScript'], description: 'I had the privilege to participate of this event both as a andromedev apprentice in the project of the organization LabRua and as an organizer of the event', link: 'https://andromedev.opendevufcg.org/' },
     ]
 
     return (
         <div>
             <section className={style.inCollege}>
                 <div className={style.text}>
-                    <h1 style={{ color: theme.title}}>In College</h1>
+                    <h1 style={{ color: theme.title }}>In College</h1>
                     <p>
                         Well, because of the pandemic the concept of wich semester I am it’s
                         a little abstract haha, so based on the disciplines that I already
@@ -40,7 +40,7 @@ export const Experiences = () => {
                 <LittleMonster className={style.icon} />
                 <div className={style.text}>
                     <div>
-                        <h1 style={{ color: theme.title}}>My Experiences</h1>
+                        <h1 style={{ color: theme.title }}>My Experiences</h1>
                         <p>
                             I’m currently working at <span>ePol</span>, a project of the Federal Police of Brazil
                             at UFCG since march of 2020.
@@ -58,11 +58,11 @@ export const Experiences = () => {
                     </div>
                     <div className={style.programming}>
                         <div>
-                            <h2 style={{ color: theme.title}}>Languages</h2>
+                            <h2 style={{ color: theme.title }}>Languages</h2>
                             <p>JavaScript - Python - Java</p>
                         </div>
                         <div>
-                            <h2 style={{ color: theme.title}}>Technologies</h2>
+                            <h2 style={{ color: theme.title }}>Technologies</h2>
                             <p>React - Gatsby - Flask - SpringBoot</p>
                         </div>
                     </div>
@@ -73,6 +73,9 @@ export const Experiences = () => {
                     <h1>Some projects that I worked on</h1>
                     <p>
                         here are some of the projects that I worked on and that are some of the highlights.
+
+                    </p>
+                    <p>
                         If you’re interested in it, just click in the card and you’ll be redirect to a link
                         related to the project
                     </p>
