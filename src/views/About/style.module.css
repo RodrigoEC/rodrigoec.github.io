@@ -6,7 +6,6 @@
 
 }
 
-
 .aboutMe a {
     width: 40%
 }
@@ -35,6 +34,10 @@
     justify-content: center;
 }
 
+.love .posts li{
+    max-width: 200px;
+}
+
 @media screen and (max-width: 1025px) {
     p {
         text-align: justify;
@@ -57,6 +60,7 @@
 
     .love .title {
         display: flex;
+        align-items: center;
         width: fit-content;
         margin: 0 auto;
     }
@@ -75,7 +79,32 @@
         display: none;
     }
 
-    .aboutMe a img {
-       width: 100%;
+    .aboutMe {
+        gap: 2rem;
     }
+
+    .aboutMe a img {
+       width: 60%;
+    }
+
+    .love .posts li{
+        max-width: 300px;
+    }
+
+    .love .posts {
+        gap: 1rem;
+    }
+
+    .love .text {
+        margin-bottom: 2rem;
+    }
+
+    .love .title h1 {
+        margin: 2rem 0;
+    }
+
+    .love .title .heart {
+        width: 30px;
+    }
+
 }

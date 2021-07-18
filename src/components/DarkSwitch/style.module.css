@@ -30,3 +30,20 @@
     transition: .3s ease;
     transition-property: transform background-color;
 }
+
+@media screen and (max-width: 750px) {
+    .container {
+        height: 1.5rem;
+        width: 3rem;
+        padding: 0rem .25rem;
+    }
+
+    .switch {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .active .switch {
+        transform: translate(1.5rem);
+    }
+}

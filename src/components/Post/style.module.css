@@ -6,7 +6,6 @@
     padding: 8px;
     box-sizing: border-box;
     
-    width: 200px;
     border: 3px solid;
     transition: padding .5s;
 }
@@ -72,7 +71,7 @@
 
 @media screen and (max-width: 550px) {
     .container {
-        width: 130px;
+        width: 90px;
     }
 
     .container::before {

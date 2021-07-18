@@ -43,7 +43,7 @@ export const About = () => {
                 <div className={style.text}>
                     <div className={style.title}>
                         <h1>What I love</h1>
-                        <Heart/>
+                        <Heart className={style.heart}/>
                     </div>
                     <p>
                         Quoting Dr. Ana Cláudia Quintana, “I think is sweeter to define
