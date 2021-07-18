@@ -4,7 +4,7 @@ import style from './style.module.css'
 
 export const Contact = () => {
     return (
-        <div >
+        <div className={style.container}>
             <section>
 
             </section>
