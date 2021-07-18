@@ -73,6 +73,7 @@
     .container {
         width: 90px;
         padding: 3px;
+        border: 1px solid;
 
     }
 
