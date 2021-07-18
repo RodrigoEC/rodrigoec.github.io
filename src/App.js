@@ -14,7 +14,7 @@ import { useTheme } from './context/theme.context';
 function App() {
   const { theme } = useTheme()
   const pages = [
-    { name: 'about', component: About, path: '/' },
+    { name: 'about', component: About, path: '/about' },
     { name: 'exp', component: Experiences, path: '/exp' },
     { name: 'contact', component: Contact, path: '/contact' },
   ]
@@ -30,8 +30,8 @@ function App() {
             className="body"
             style={{'color': theme.font}}>
             <Switch>
-              {pages.map((page) => <Route path={page.path} exact component={page.component} />)}
-              <Route path='*' > <Redirect to='/' /> </Route>
+              {pages.map((page) => <Route path={page.path} component={page.component} />)}
+              <Route path='*' > <Redirect to='/about' /> </Route>
             </Switch>
           </div>
         </Router>
