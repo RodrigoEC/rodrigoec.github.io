@@ -11,7 +11,7 @@ export const LinkSocialMedia = ({ info }) => {
         <div className={style.container}>
             <a
                 href={link}
-                rel='referrer'
+                rel='noreferrer'
                 target='_blank'>
 
                 <Icon className={`${style.icon} ${isActive ? style.logoActive : ''}`} />

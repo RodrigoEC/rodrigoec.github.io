@@ -15,7 +15,7 @@ export const Post = ({ post }) => {
             target='_blank'
             className={`${style.container} ${isActive ? style.active : ''}`}
             style={{
-                'border-color': theme.border,
+                borderColor: theme.border,
             }}> 
 
                 <div className={style.cover}/>

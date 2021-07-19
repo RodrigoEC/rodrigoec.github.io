@@ -68,7 +68,7 @@ export const About = () => {
                 </div>
                 <ul className={style.posts}>
 
-                    { posts.map((post) => <li className={style.post}><Post post={post}/></li>)}
+                    { posts.map((post) => <li className={style.post} key={post.name}><Post post={post}/></li>)}
                 </ul>
             </section>
 

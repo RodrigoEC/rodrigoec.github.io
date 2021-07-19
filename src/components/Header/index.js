@@ -20,7 +20,7 @@ export const Header = () => {
     return (
         <div
             className={style.container}
-            style={{ 'background-color': theme.background }}>
+            style={{ backgroundColor: theme.background }}>
 
             <div className={`${style.logoContainer} ${isActive ? style.logoActive : ''}`}>
                 <Link to='/'>
