@@ -38,12 +38,12 @@ export const About = () => {
                 <div className={style.text}>
                     <h1 style={{ color: theme.title}}>Hi!</h1>
                     <p>
-                        I’m Rodrigo, a Computer Science student at the fifth semester at the Federal
+                        I’m Rodrigo, a Computer Science student currently in the fifth semester at the Federal
                         University of Campina Grande (UFCG) in Brazil.
                     </p><p>
-                        When it comes to my professional self I like to consider myself a Software Engineer
-                        in the making slash Researcher slash just a curious person that likes to solve
-                        problems and create things.
+                        When it comes to my professional self I like to consider that I'm a Software Engineer
+                        in the making, slash Researcher, slash just a curious person that likes to solve
+                        problems and create new things.
                     </p>
                 </div>
             </section>
@@ -57,13 +57,12 @@ export const About = () => {
                         Quoting Dr. Ana Cláudia Quintana, “I think is sweeter to define
                         ourselves by the things we love”, therefore, who am I?
                     </p><p>
-                        well, I love to create new things and that translates itself in really different
-                        areas of my life. For example, I went to Science Computer college because I
-                        wanted to create solutions to problems of the day-to-day life. I also love
-                        to take photos, create the scene in my head and try to make it come to
-                        life is one of the things that I’m obsessed about.
+                        I'm a person that loves to create new things and this translates itself in really different
+                        areas of my life. One good example of that my choice for college, I went to Science Computer because I
+                        wanted to solve problems, therefore, I wanted to create their solutions. I also love to spend time taking photos, 
+                        create the scene in my head and try to make it come to life is one of the things that I’m obsessed about.
                     </p><p>
-                        So...who am I? I’m just a creative person that is trying to make life a little bit easier.
+                        So...who am I? wel..I’m just a creative person that's trying to make life a little bit easier for people around me.
                     </p>
                 </div>
                 <ul className={style.posts}>

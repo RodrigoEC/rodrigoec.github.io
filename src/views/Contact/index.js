@@ -26,10 +26,10 @@ export const Contact = () => {
                 <div className={style.text}>
                     <h1>Contact me</h1>
                     <p>
-                        Hi! I’m really glad that you’re here, if you want to reach me you
+                        Hi! I’m really glad you’re here! if you want to reach me you
                         can use any of the social media or e-mail listed below.
                     </p>
-                    <p> <span>Ps:</span> Each icon of each social media is a link to their respectively page.</p>
+                    <p> <span>Ps:</span> The icons of each social media is a link to their respectively pages.</p>
                     <ul className={style.links}>
                         {links.map((link) => <li key={link.title}><LinkSocialMedia info={link}/></li>)}
                     </ul>
