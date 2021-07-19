@@ -15,6 +15,9 @@
     font-weight: bold;
 }
 
+.logoActive {
+    filter: invert(1);
+}
 
 @media screen and (max-width: 550px) {
     .title {
