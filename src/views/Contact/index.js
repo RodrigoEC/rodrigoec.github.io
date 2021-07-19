@@ -12,10 +12,10 @@ import style from './style.module.css'
 
 export const Contact = () => {
     const links = [
-        {title: 'Instagram', body: '@rodrigoeloyc', Icon: InstagramIcon, link: 'www.instagram.com/rodrigoeloyc'},
+        {title: 'Instagram', body: '@rodrigoeloyc', Icon: InstagramIcon, link: 'https://www.instagram.com/rodrigoeloyc'},
         {title: 'Github', body: '@RodrigoEC', Icon: GithubIcon, link: 'https://github.com/RodrigoEC'},
         {title: 'e-mail', body: 'rodrigoecavalcanti@gmail.com', Icon: EmailIcon},
-        {title: 'Linkedin', body: 'Rodrigo Eloy Cavalcanti', Icon: LinkedinIcon, link: 'www.linkedin.com/in/rodrigo-eloy/'},
+        {title: 'Linkedin', body: 'Rodrigo Eloy Cavalcanti', Icon: LinkedinIcon, link: 'https://www.linkedin.com/in/rodrigo-eloy/'},
     ]
 
 
@@ -29,6 +29,7 @@ export const Contact = () => {
                         Hi! I’m really glad that you’re here, if you want to reach me you
                         can use any of the social media or e-mail listed below.
                     </p>
+                    <p> <span>Ps:</span> Each icon of each social media is a link to their respectively page.</p>
                     <ul className={style.links}>
                         {links.map((link) => <li key={link.title}><LinkSocialMedia info={link}/></li>)}
                     </ul>
