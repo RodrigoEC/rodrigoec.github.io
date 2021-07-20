@@ -6,7 +6,7 @@ export const ProgressBar = () => {
     const [progress, setProgress] = useState(0)
 
     useEffect(() => {
-        setProgress(70)
+        setProgress(60)
     }, [])
 
     return (

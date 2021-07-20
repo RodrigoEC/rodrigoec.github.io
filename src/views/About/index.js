@@ -62,7 +62,7 @@ export const About = () => {
                         wanted to solve problems, therefore, I wanted to create their solutions. I also love to spend time taking photos, 
                         create the scene in my head and try to make it come to life is one of the things that I’m obsessed about.
                     </p><p>
-                        So...who am I? wel..I’m just a creative person that's trying to make life a little bit easier for people around me.
+                        So...who am I? I’m just a creative person that's trying to make life a little bit easier for people around me.
                     </p>
                 </div>
                 <ul className={style.posts}>
