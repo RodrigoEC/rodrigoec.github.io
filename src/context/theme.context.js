@@ -1,38 +1,34 @@
 import React, { createContext, useContext, useState, useCallback } from 'react'
+import { ThemeProvider } from 'styled-components'
+
 
 const colors = {
     black: '#282E31',
-    black2: 'rgb(77 93 98 / 77%)',
+    blackOpaque: 'rgb(77 93 98 / 77%)',
     white: '#EFEFEF',
     'opaque-black': '#282E3131',
     'grayish-green': '#ffffff31',
     grey: '#d9d9d9',
-
-
 }
 
 
 const ThemeContext = createContext()
-const themeLight = {
-    border: colors.black2,
-    switchBackground: colors.black,
-    switch: colors.white,
-    background: colors.white,
-    title: colors.black,
-    font: colors.black,
-}
 
 const themeDark = {
+    primary: colors.black,
+    secondary: colors.white,
     border: colors['grayish-green'],
-    switchBackground: colors.white,
-    switch: colors.black,
-    background: colors.black,
-    title: colors.white,
-    font: colors.grey,
+    font: colors.grey
 }
 
+const themeLight = {
+    primary: colors.white,
+    secondary: colors.black,
+    border: colors['opaque-black'],
+    font: colors.black
+}
 
-export default function ThemeProvider({ children }) {
+export default function ThemesProvider({ children }) {
     const [isActive, setIsActive] = useState(false)
     const [theme, setTheme] = useState(themeLight)
 
@@ -50,7 +46,9 @@ export default function ThemeProvider({ children }) {
 
     return (
         <ThemeContext.Provider value={value}>
-            {children}
+            <ThemeProvider theme={theme}>
+                {children}
+            </ThemeProvider>
         </ThemeContext.Provider>
     )
 }

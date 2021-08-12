@@ -1,16 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { ReactComponent as Logo } from '../../assets/logo.svg'
+import { ReactComponent as LogoIcon } from '../../assets/logo.svg'
 import { useTheme } from '../../context/theme.context'
 
 import { DarkSwitch } from '../DarkSwitch'
 
-import style from './style.module.css'
+import { HeaderWrapper, Logo, Links } from './styles'
 
 export const Header = () => {
-    const { isActive, theme } = useTheme()
-
+    const { isActive } = useTheme()
     const pages = [
         { name: 'about me', path: '/' },
         { name: 'experiences', path: '/exp' },
@@ -18,28 +17,24 @@ export const Header = () => {
     ]
 
     return (
-        <div
-            className={style.container}
-            style={{ backgroundColor: theme.background }}>
-
-            <div className={`${style.logoContainer} ${isActive ? style.logoActive : ''}`}>
+        <HeaderWrapper>
+            <Logo isActive={isActive}>
                 <Link to='/'>
-                    <Logo className={style.logo}/>
+                    <LogoIcon />
                 </Link>
-            </div>
-            <ul className={style.links}>
+            </Logo>
+            <Links>
                 {pages.map((page) => {
                     return (
                         <li key={page.name}>
-                            <Link
-                                to={page.path}
-                                style={{ color: theme.font }}
-                            >{page.name}</Link>
+                            <Link to={page.path} >
+                                {page.name}
+                            </Link>
                         </li>
                     )
                 })}
-            </ul>
+            </Links>
             <DarkSwitch />
-        </div>
+        </HeaderWrapper>
     )
 }

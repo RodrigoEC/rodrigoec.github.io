@@ -7,7 +7,6 @@ import { Experiences } from './views/Experiences';
 import { Contact } from './views/Contact';
 import { About } from './views/About';
 
-import './styles/reset.css';
 import './styles/App.css';
 import { useTheme } from './context/theme.context';
 
@@ -21,9 +20,7 @@ function App() {
 
 
   return (
-    <div 
-      className="App"
-      style={{backgroundColor: theme.background}}>
+    <div className="App">
         <Router>
           <Header />
           <div

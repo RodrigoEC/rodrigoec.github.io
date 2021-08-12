@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const DarkSwitchWrapper = styled.div`
-    background-color: ${({ isActive }) => isActive ? 'var(--white)' : 'var(--black)'};
+    ${console.log(styled.theme)}
+    background-color: ${({ theme }) => theme.secondary};
     transition: background-color .3s ease;
 
     display: flex;
@@ -16,7 +17,7 @@ export const DarkSwitchWrapper = styled.div`
     cursor: pointer;
 
     div {
-        background-color: ${({ isActive }) => isActive ? 'var(--black)' : 'var(--white)'};
+        background-color: ${({ theme }) => theme.primary};
 
         width: 1.25rem;
         height: 1.25rem;

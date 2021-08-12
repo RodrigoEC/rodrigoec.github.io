@@ -1,26 +1,22 @@
 import React from 'react'
 import { useTheme } from '../../context/theme.context'
 
-import style from './style.module.css'
+import { LinkWrapper, Info } from './styles'
 
 export const LinkSocialMedia = ({ info }) => {
     const { isActive } = useTheme()
     const { title, body, Icon, link } = info
 
     return (
-        <div className={style.container}>
-            <a
-                href={link}
-                rel='noreferrer'
-                target='_blank'>
-
-                <Icon className={`${style.icon} ${isActive ? style.logoActive : ''}`} />
+        <LinkWrapper isActive={isActive} >
+            <a href={link} rel='noreferrer' target='_blank'>
+                <Icon/>
             </a>
-            <div>
-                <h5 className={style.title}>{title}:</h5>
-                <span className={style.body}>{body}</span>
-            </div>
-        </div>
+            <Info>
+                <h5>{title}:</h5>
+                <span>{body}</span>
+            </Info>
+        </LinkWrapper>
     )
 
 }
