@@ -4,7 +4,7 @@ import { useTheme } from '../../context/theme.context'
 import { DarkSwitchWrapper } from './styles'
 
 export const DarkSwitch = () => {
-    const { isActive, theme, handleSwitch } = useTheme()
+    const { isActive, handleSwitch } = useTheme()
 
     return (
         <DarkSwitchWrapper isActive={isActive} onClick={handleSwitch}>

@@ -11,7 +11,7 @@ export const ProjectCard = ({ project }) => {
             <p>{description}</p>
             <Devider/>
             <Techs>
-                {technologies.map((tech) => <li><span>{tech}</span></li>)}
+                {technologies.map((tech, i) => <li key={i}><span>{tech}</span></li>)}
             </Techs>
         </ProjectCardWrapper>
     )
