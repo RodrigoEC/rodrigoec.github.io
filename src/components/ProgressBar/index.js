@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import style from './style.module.css'
+import { ProgressBarWrapper, ProgressBar as Progressing } from './styles'
 
 export const ProgressBar = () => {
     const [progress, setProgress] = useState(0)
@@ -10,17 +10,9 @@ export const ProgressBar = () => {
     }, [])
 
     return (
-        <div className={style.container}>
-            <div className={style.progressContainer}>
-                <div 
-                    className={style.progress}
-                    style={{width: `${progress}%`}}
-                    >
-                </div>
-            </div>
-            <span className={style.number}>
-                {progress}%
-            </span>
-        </div>
+        <ProgressBarWrapper >
+            <Progressing progress={progress}> <div></div> </Progressing>
+            <span>{progress}%</span>
+        </ProgressBarWrapper>
     )
 }

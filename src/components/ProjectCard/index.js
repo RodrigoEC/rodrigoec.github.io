@@ -1,23 +1,18 @@
 import React from 'react'
 
-import style from './style.module.css'
+import { ProjectCardWrapper, Title, Devider, Techs } from './styles'
 
 export const ProjectCard = ({ project }) => {
     const { title, technologies, description, link  } = project
     
     return (
-        <a  
-            href={link}
-            target='_blank'
-            rel='noreferrer'
-            className={style.container}
-            >
-            <h4 className={style.title}>{title}</h4>
-            <p className={style.desc}>{description}</p>
-            <div className={style.div}></div>
-            <ul className={style.techs}>
+        <ProjectCardWrapper href={link} target='_blank' rel='noreferrer'>
+            <Title>{title}</Title>
+            <p>{description}</p>
+            <Devider/>
+            <Techs>
                 {technologies.map((tech) => <li><span>{tech}</span></li>)}
-            </ul>
-        </a>
+            </Techs>
+        </ProjectCardWrapper>
     )
 }
