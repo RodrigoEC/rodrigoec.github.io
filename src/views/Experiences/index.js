@@ -5,12 +5,10 @@ import { ReactComponent as LittleMonster } from '../../assets/monster.svg'
 
 import { ProgressBar } from '../../components/ProgressBar'
 import { ProjectCard } from '../../components/ProjectCard'
-import { useTheme } from '../../context/theme.context'
 
-import style from './style.module.css'
+import { WelcomeWrapper, InCollegeWrapper, Projects, Text, ExperiencesWrapper, ProjectsWrapper, Programming, PageWrapper } from './styles'
 
 export const Experiences = () => {
-    const { theme } = useTheme()
 
     const projects = [
         { title: 'ePol', technologies: ['Python', 'Flask'], description: 'Project of the Federal Police of Brazil at UFCG. I had the opportunity to work with both data analysis and frontend in this project.', link: 'http://www.computacao.ufcg.edu.br/graduacao/informes/projetoepolelancadocomsolenidadeembrasilia' },
@@ -22,14 +20,14 @@ export const Experiences = () => {
     ]
 
     return (
-        <div>
-            <div className={style.hi}>
+        <PageWrapper>
+            <WelcomeWrapper>
                 <h1>Hi again!</h1>
                 <p>This page is like the summary of my professional experiences in college.</p>
-            </div>
-            <section className={style.inCollege}>
-                <div className={style.text}>
-                    <h1 style={{ color: theme.title }}>College</h1>
+            </WelcomeWrapper>
+            <InCollegeWrapper>
+                <Text>
+                    <h1>College</h1>
                     <p>
                         Well, because of the pandemic the answer to "wich semester I'm in" is
                         a little abstract right now haha, so based on the disciplines that I already
@@ -37,14 +35,14 @@ export const Experiences = () => {
                         that I had I created this visualization of where I am in college.
                     </p>
                     <ProgressBar />
-                </div>
-                <Guy className={style.icon} />
-            </section>
-            <section className={style.experiences}>
-                <LittleMonster className={style.icon} />
-                <div className={style.text}>
+                </Text>
+                <Guy/>
+            </InCollegeWrapper>
+            <ExperiencesWrapper>
+                <LittleMonster />
+                <Text>
                     <div>
-                        <h1 style={{ color: theme.title }}>My Experiences</h1>
+                        <h1>My Experiences</h1>
                         <p>
                             I’m currently working at <span>ePol</span> since march of 2020. ePol is a project of the Federal Police of Brazil
                             at the Federal University of Campina Grande (UFCG).
@@ -59,20 +57,20 @@ export const Experiences = () => {
                             college and that's a project that I’m in love with it.
                         </p>
                     </div>
-                    <div className={style.programming}>
+                    <Programming>
                         <div>
-                            <h2 style={{ color: theme.title }}>Languages</h2>
+                            <h2>Languages</h2>
                             <p>JavaScript - Python - Java</p>
                         </div>
                         <div>
-                            <h2 style={{ color: theme.title }}>Technologies</h2>
+                            <h2>Technologies</h2>
                             <p>React - Gatsby - Flask - SpringBoot</p>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section className={style.projectsContainer}>
-                <div className={style.text}>
+                    </Programming>
+                </Text>
+            </ExperiencesWrapper>
+            <ProjectsWrapper>
+                <Text>
                     <h1>Projects that I've worked on</h1>
                     <p>
                         Here are some of the projects that I've worked on and that I would like to highlight it.
@@ -82,8 +80,8 @@ export const Experiences = () => {
                         If you’re interested in it, just click in the card and you’ll be redirect to a link that is
                         related to the project.
                     </p>
-                </div>
-                <ul className={style.projects}>
+                </Text>
+                <Projects>
                     {projects.map((project) => {
                         return (
                             <li key={project.title}>
@@ -91,8 +89,8 @@ export const Experiences = () => {
                             </li>
                         )
                     })}
-                </ul>
-            </section>
-        </div>
+                </Projects>
+            </ProjectsWrapper>
+        </PageWrapper>
     )
 }
