@@ -9,12 +9,9 @@ import Woman from '../../assets/posts/woman.png'
 import { ReactComponent as Heart } from '../../assets/heart.svg'
 import { Post } from '../../components/Post'
 
-import { useTheme } from '../../context/theme.context'
-
-import style from './style.module.css'
+import { AboutMeWrapper, Profile, Text, Title, Posts, LoveWrapper } from './styles'
 
 export const About = () => {
-    const { theme } = useTheme()
     const posts = [
         { name: 'woman', link: 'https://www.instagram.com/p/B6ssVdphu2G/?utm_source=ig_web_copy_link', photo: Woman, alt: 'Photo of a woman with distorted colors'},
         { name: 'coffee', link: 'https://www.instagram.com/p/B5xnZh1A88G/', photo: Coffee, alt: 'Photo of a coffee taked from above'},
@@ -25,18 +22,14 @@ export const About = () => {
 
     return (
         <div >
-            <section className={style.aboutMe}>
-                <a  
-                    href='https://github.com/rodrigoec'
-                    className={style.photo}
-                    target='_blank'
-                    rel='noreferrer'>
-
+            <AboutMeWrapper>
+                <Profile href='https://github.com/rodrigoec' target='_blank' rel='noreferrer'>
                     <img src='https://avatars.githubusercontent.com/u/42751604?v=4'
                         alt='The avatar of my github profile'/>
-                </a>
-                <div className={style.text}>
-                    <h1 style={{ color: theme.title}}>Hi!</h1>
+                </Profile>
+
+                <Text>
+                    <Title><h2>Hi!</h2></Title>
                     <p>
                         I’m Rodrigo, a Computer Science student currently in the fifth semester at the Federal
                         University of Campina Grande (UFCG) in Brazil.
@@ -45,14 +38,14 @@ export const About = () => {
                         in the making, slash Researcher, slash just a curious person that likes to solve
                         problems and create new things.
                     </p>
-                </div>
-            </section>
-            <section className={style.love}>
-                <div className={style.text}>
-                    <div className={style.title}>
-                        <h1 style={{ color: theme.title}}>What I love</h1>
-                        <Heart className={style.heart}/>
-                    </div>
+                </Text>
+            </AboutMeWrapper>
+            <LoveWrapper>
+                <Text>
+                    <Title>
+                        <h2>What I love</h2>
+                        <Heart/>
+                    </Title>
                     <p>
                         Quoting Dr. Ana Cláudia Quintana, “I think is sweeter to define
                         ourselves by the things we love”, therefore, who am I?
@@ -64,15 +57,11 @@ export const About = () => {
                     </p><p>
                         So...who am I? I’m just a creative person that's trying to make life a little bit easier for people around me.
                     </p>
-                </div>
-                <ul className={style.posts}>
-
-                    { posts.map((post) => <li className={style.post} key={post.name}><Post post={post}/></li>)}
-                </ul>
-            </section>
-
-
-
+                </Text>
+                <Posts>
+                    {posts.map((post) => <li key={post.name}><Post post={post}/></li>)}
+                </Posts>
+            </LoveWrapper>
         </div>
     )
 }

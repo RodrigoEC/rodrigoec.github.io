@@ -10,7 +10,6 @@ export const Post = ({ post }) => {
             href={link}
             rel='noreferrer'
             target='_blank'> 
-
                 <Cover/>
                 <img src={photo} alt={alt} />
         </PostWrapper>
