@@ -8,7 +8,7 @@ import { ReactComponent as LinkedinIcon } from '../../assets/linkedin.svg'
 
 import { LinkSocialMedia } from '../../components/LinkSocialMedia'
 
-import style from './style.module.css'
+import { ContactWrapper, Links, Text } from './styles'
 
 export const Contact = () => {
     const links = [
@@ -21,21 +21,21 @@ export const Contact = () => {
 
 
     return (
-        <div className={style.container}>
-            <section className={style.body}>
-                <div className={style.text}>
+        <ContactWrapper>
+            <section>
+                <Text>
                     <h1>Contact me</h1>
                     <p>
                         Hi! I’m really glad you’re here! if you want to reach me you
                         can use any of the social media or e-mail listed below.
                     </p>
                     <p> <span>Ps:</span> The icons of each social media is a link to their respectively pages.</p>
-                    <ul className={style.links}>
+                    <Links>
                         {links.map((link) => <li key={link.title}><LinkSocialMedia info={link}/></li>)}
-                    </ul>
-                </div>
+                    </Links>
+                </Text>
             </section>
-            <GuySeated className={style.icon}/>
-        </div>
+            <GuySeated />
+        </ContactWrapper>
     )
 }

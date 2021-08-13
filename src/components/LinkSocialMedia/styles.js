@@ -8,6 +8,7 @@ export const LinkWrapper = styled.div`
     a {
         ${({ isActive }) => isActive ? 'filter: invert(1)' : ''};
     }
+
 `
 
 export const Info = styled.div`
@@ -21,5 +22,15 @@ export const Info = styled.div`
         @media screen and (max-width: 550px) {
             font-size: 14px;
         }
+    }
+`
+
+export const IconWrapper = styled.a`
+    display: inherit;
+    flex-direction: column;
+
+    svg {
+        margin: 0 auto;
+        margin-bottom: 0 !important;
     }
 `

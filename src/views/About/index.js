@@ -27,7 +27,6 @@ export const About = () => {
                     <img src='https://avatars.githubusercontent.com/u/42751604?v=4'
                         alt='The avatar of my github profile'/>
                 </Profile>
-
                 <Text>
                     <Title><h2>Hi!</h2></Title>
                     <p>
