@@ -39,6 +39,13 @@ export const ProjectCardWrapper = styled.a`
         height: fit-content;
         max-width: 350px;
     }
+
+    @media screen and (max-width: 550px) {
+    
+        ${Title}, p {
+            text-align: center;
+        }
+    }
 `
 
 export const Devider = styled.div`
