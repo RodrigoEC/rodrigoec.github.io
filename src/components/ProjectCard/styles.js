@@ -11,7 +11,7 @@ export const ProjectCardWrapper = styled.a`
     flex-direction: column;
     justify-content: space-between;
 
-    height: 280px;
+    min-height: 280px;
     max-width: 420px;
 
     background-color: ${({ theme }) => theme.primary};
@@ -36,7 +36,6 @@ export const ProjectCardWrapper = styled.a`
     }
 
     @media screen and (max-width: 1025px) {
-        height: fit-content;
         max-width: 350px;
     }
 

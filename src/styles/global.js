@@ -69,7 +69,7 @@ export default createGlobalStyle`
     
     .body {
         padding: 4rem 2rem;
-        max-width: 1520px;
+        max-width: 1600px;
         margin: 0 auto;
     }
 

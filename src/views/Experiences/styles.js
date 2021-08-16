@@ -155,9 +155,9 @@ export const ProjectsWrapper = styled.section`
 export const Projects = styled.ul`
     display: flex;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: 3rem;
     justify-content: center;
-    grid-template-columns: repeat(2fr);
+    /* grid-template-columns: repeat(2fr); */
 
     li {
         display: inline-block;
