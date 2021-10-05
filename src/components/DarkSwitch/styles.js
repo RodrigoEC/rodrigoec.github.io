@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const DarkSwitchWrapper = styled.div`
-    ${console.log(styled.theme)}
     background-color: ${({ theme }) => theme.secondary};
     transition: background-color .3s ease;
 

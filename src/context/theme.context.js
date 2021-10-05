@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useCallback } from 'react'
+import React, { createContext, useContext, useState, useCallback, useEffect } from 'react'
 import { ThemeProvider } from 'styled-components'
 
 
@@ -28,15 +28,51 @@ const themeLight = {
     font: colors.black
 }
 
+const themes = {
+    light: themeLight,
+    dark: themeDark,
+} 
+
 export default function ThemesProvider({ children }) {
-    const [isActive, setIsActive] = useState(false)
-    const [theme, setTheme] = useState(themeLight)
+    const getTheme = () => {
+        let theme = localStorage.getItem('@rodrigoec/theme')
+        if (!theme) {
+            localStorage.setItem('@rodrigoec/theme', 'light')
+            theme = 'light'
+        }
+        return theme
+    }
 
+    const getIsActive = useCallback(() => {
+        const isActive = localStorage.getItem('@rodrigoec/active')
+        if (!isActive) {
+            localStorage.setItem('@rodrigoec/active', false)
+            return false
+        }
+        return isActive
+    },[])
+
+    const [isActive, setIsActive] = useState(localStorage.getItem('@rodrigoec/active') || false)
+    const [theme, setTheme] = useState(themes[localStorage.getItem('@rodrigoec/theme')] || themes.light)
+    
     const handleSwitch = useCallback(() => {
-        setTheme(theme === themeLight ? themeDark : themeLight)
-        setIsActive(!isActive)
-    }, [setTheme, setIsActive, isActive, theme])
+        const currentTheme = getTheme()
+        
+        if (currentTheme === 'light') {
+            setTheme(themes.dark)
+            localStorage.setItem('@rodrigoec/theme', 'dark')
+            localStorage.setItem('@rodrigoec/active', true)
+            setIsActive(true)
+        } else {
+            setTheme(themes.light)
+            localStorage.setItem('@rodrigoec/theme', 'light')
+            localStorage.setItem('@rodrigoec/active', false)
+            setIsActive(false)
+        }
 
+        
+    }, [setTheme, setIsActive])
+    
     const value = {
         isActive,
         setIsActive,
@@ -44,7 +80,7 @@ export default function ThemesProvider({ children }) {
         theme,
     }
 
-    return (
+    return theme  && (
         <ThemeContext.Provider value={value}>
             <ThemeProvider theme={theme}>
                 {children}
