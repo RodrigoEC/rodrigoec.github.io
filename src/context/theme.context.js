@@ -49,11 +49,15 @@ export default function ThemesProvider({ children }) {
             localStorage.setItem('@rodrigoec/active', false)
             return false
         }
-        return isActive
+
+        return isActive === 'true'
     },[])
 
-    const [isActive, setIsActive] = useState(localStorage.getItem('@rodrigoec/active') || false)
-    const [theme, setTheme] = useState(themes[localStorage.getItem('@rodrigoec/theme')] || themes.light)
+    const currentTheme = getTheme()
+    const isCurrentlyActive = getIsActive()
+
+    const [isActive, setIsActive] = useState(isCurrentlyActive)
+    const [theme, setTheme] = useState(themes[currentTheme])
     
     const handleSwitch = useCallback(() => {
         const currentTheme = getTheme()
