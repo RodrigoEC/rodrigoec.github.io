@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useCallback, useEffect } from 'react'
+import React, { createContext, useContext, useState, useCallback } from 'react'
 import { ThemeProvider } from 'styled-components'
 
 
@@ -61,21 +61,16 @@ export default function ThemesProvider({ children }) {
     
     const handleSwitch = useCallback(() => {
         const currentTheme = getTheme()
-        
-        if (currentTheme === 'light') {
-            setTheme(themes.dark)
-            localStorage.setItem('@rodrigoec/theme', 'dark')
-            localStorage.setItem('@rodrigoec/active', true)
-            setIsActive(true)
-        } else {
-            setTheme(themes.light)
-            localStorage.setItem('@rodrigoec/theme', 'light')
-            localStorage.setItem('@rodrigoec/active', false)
-            setIsActive(false)
-        }
+        const isCurrentlyActive = getIsActive()
 
+        const nextTheme = currentTheme === 'light' ? 'dark' : 'light'
+
+        localStorage.setItem('@rodrigoec/active', !isCurrentlyActive)
+        localStorage.setItem('@rodrigoec/theme', nextTheme)
+        setIsActive(!isCurrentlyActive)
+        setTheme(themes[nextTheme])
         
-    }, [setTheme, setIsActive])
+    }, [setTheme, setIsActive, getIsActive])
     
     const value = {
         isActive,
