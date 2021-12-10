@@ -8,7 +8,7 @@ import { ReactComponent as LinkedinIcon } from '../../assets/linkedin.svg'
 
 import { LinkSocialMedia } from '../../components/LinkSocialMedia'
 
-import { ContactWrapper, Links, Text } from './styles'
+import { ContactWrapper, Links, Text, Link } from './styles'
 
 export const Contact = () => {
     const links = [
@@ -17,7 +17,6 @@ export const Contact = () => {
         {title: 'e-mail', body: 'rodrigoecavalcanti@gmail.com', Icon: EmailIcon},
         {title: 'Linkedin', body: 'Rodrigo Eloy Cavalcanti', Icon: LinkedinIcon, link: 'https://www.linkedin.com/in/rodrigo-eloy/'},
     ]
-
 
 
     return (
@@ -33,7 +32,14 @@ export const Contact = () => {
                     <Links>
                         {links.map((link) => <li key={link.title}><LinkSocialMedia info={link}/></li>)}
                     </Links>
+                    <p>You can also download my CV clicking on the button below</p>
                 </Text>
+                <p>
+
+                    <Link to='/files/my_cv.pdf' target="_blank" download>
+                        Download CV
+                    </Link>
+                </p>
             </section>
             <GuySeated />
         </ContactWrapper>

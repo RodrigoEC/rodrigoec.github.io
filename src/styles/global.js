@@ -2,6 +2,10 @@ import { createGlobalStyle } from 'styled-components';
 import './App.css'
 
 export default createGlobalStyle`
+    html, body, #root {
+        height: 100%;
+        
+    }
         html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
@@ -49,7 +53,6 @@ export default createGlobalStyle`
     
     a {
         text-decoration: none;
-        color: inherit;
     }
     
     
@@ -71,6 +74,7 @@ export default createGlobalStyle`
         padding: 4rem 2rem;
         max-width: 1600px;
         margin: 0 auto;
+        height: fit-content;
     }
 
     h1 {
@@ -136,4 +140,17 @@ export default createGlobalStyle`
 
     }
 
+    button {
+        padding: 10px 20px;
+        background-color: ${({ theme }) => theme['primary']};
+        border: thin solid ${({ theme }) => theme['font']};
+        transition: ease-out .3s;
+        color: thin solid ${({ theme }) => theme['font']};
+        cursor: pointer;
+
+        &:hover {
+            color: thin solid ${({ theme }) => theme['primary']};
+            background-color: ${({ theme }) => theme['font']};
+        }
+    }
 `
