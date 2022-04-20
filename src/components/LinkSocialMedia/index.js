@@ -11,11 +11,11 @@ export const LinkSocialMedia = ({ info }) => {
         <LinkWrapper isActive={isActive} >
             <IconWrapper href={link} rel='noreferrer' target='_blank'>
                 <Icon/>
+                <Info>
+                    <h5>{title}:</h5>
+                </Info>
             </IconWrapper>
-            <Info>
-                <h5>{title}:</h5>
-                <span>{body}</span>
-            </Info>
+            <span>{body}</span>
         </LinkWrapper>
     )
 

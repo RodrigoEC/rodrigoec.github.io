@@ -5,7 +5,7 @@ export const LinkWrapper = styled.div`
     gap: 1rem;
     align-items: center;
 
-    a {
+    a svg {
         ${({ isActive }) => isActive ? 'filter: invert(1)' : ''};
     }
 
@@ -26,11 +26,12 @@ export const Info = styled.div`
 `
 
 export const IconWrapper = styled.a`
-    display: inherit;
-    flex-direction: column;
+    display: flex;
+    align-items: center;
 
     svg {
         margin: 0 auto;
+        margin-right: 1rem;
         margin-bottom: 0 !important;
     }
 `
