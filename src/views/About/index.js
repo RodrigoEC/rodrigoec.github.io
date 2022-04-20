@@ -30,7 +30,7 @@ export const About = () => {
                 <Text>
                     <Title><h2>Hi!</h2></Title>
                     <p>
-                        I’m Rodrigo, a Computer Science student currently in the fifth semester at the Federal
+                        I’m Rodrigo, a Computer Science student currently in the sixth semester at the Federal
                         University of Campina Grande (UFCG) in Brazil.
                     </p><p>
                         When it comes to my professional self I like to consider that I'm a Software Engineer
@@ -54,7 +54,7 @@ export const About = () => {
                         wanted to solve problems, therefore, I wanted to create their solutions. I also love to spend time taking photos, 
                         create the scene in my head and try to make it come to life is one of the things that I’m obsessed about.
                     </p><p>
-                        So...who am I? I’m just a creative person that's trying to make life a little bit easier for people around me.
+                        So...who am I? I'm just a creative person that's trying to make life a little bit easier for people around me.
                     </p>
                 </Text>
                 <Posts>

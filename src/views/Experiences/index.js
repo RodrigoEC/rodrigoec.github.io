@@ -11,8 +11,8 @@ import { WelcomeWrapper, InCollegeWrapper, Projects, Text, ExperiencesWrapper, P
 export const Experiences = () => {
 
     const projects = [
-        { title: 'ePol', technologies: ['Python', 'Flask'], description: 'Project of the Federal Police of Brazil at UFCG. I had the opportunity to work with both data analysis and frontend in this project.', link: 'http://www.computacao.ufcg.edu.br/graduacao/informes/projetoepolelancadocomsolenidadeembrasilia' },
-        { title: 'LabRua', technologies: ['React', 'Gatsby', 'JavaScript'], description: 'I’m remaking the design and implementing a new site to the Organization LabRua.', link: 'https://www.labrua.org/sobre/' },
+        { title: 'ePol', technologies: ['Python', 'NLTK', 'Spacy', 'Flask'], description: 'Project of the Federal Police of Brazil at UFCG. I had the opportunity to work with both data analysis and frontend in this project.', link: 'http://www.computacao.ufcg.edu.br/graduacao/informes/projetoepolelancadocomsolenidadeembrasilia' },
+        { title: 'SoLanches', technologies: ['React', 'JavaScript'], description: 'SoLanches is a project that aims to create a platform so the shops in city of Solanea-PB can have a showcase to sell their products', link: 'https://github.com/SoLanches/Frontend-SoLanches' },
         { title: 'HoCo', technologies: ['React', 'JavaScript'], description: 'HoCo is an application created to support Computer Science students at UFCG when it comes to the management of their Complementary Activities.', link: 'https://github.com/Guardians-DSC/HoCo' },
         { title: 'AnonymousCents', technologies: ['Python', 'GoogleAPIs'], description: 'The first application that I create with a friend in 2020 so we could solve a grade disponibility problem. I was really fun to work on it.', link: 'https://github.com/BiggerThanOurselves/anonymousCents' },
         { title: 'Hacktoberfest 2020', technologies: ['JavaScript', 'HTML', 'CSS'], description: 'Event brought by OpenDevUFCG. At the event I collaborated as a volunteer with the implementation of the event site.', link: 'https://opendevufcg.org/hacktoberfest/' },
@@ -36,7 +36,7 @@ export const Experiences = () => {
                     </p>
                     <ProgressBar />
                 </Text>
-                <Guy/>
+                <Guy />
             </InCollegeWrapper>
             <ExperiencesWrapper>
                 <LittleMonster />
