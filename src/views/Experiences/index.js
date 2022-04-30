@@ -17,6 +17,8 @@ export const Experiences = () => {
         { title: 'AnonymousCents', technologies: ['Python', 'GoogleAPIs'], description: 'The first application that I create with a friend in 2020 so we could solve a grade disponibility problem. I was really fun to work on it.', link: 'https://github.com/BiggerThanOurselves/anonymousCents' },
         { title: 'Hacktoberfest 2020', technologies: ['JavaScript', 'HTML', 'CSS'], description: 'Event brought by OpenDevUFCG. At the event I collaborated as a volunteer with the implementation of the event site.', link: 'https://opendevufcg.org/hacktoberfest/' },
         { title: 'Andromedev 2020', technologies: ['React', 'Gatsby', 'JavaScript'], description: 'I had the privilege to participate of this event both as a andromedev apprentice in the project of the organization LabRua and as an organizer of the event', link: 'https://andromedev.opendevufcg.org/' },
+        { title: 'N.Y here we go!', technologies: ['React', 'JavaScript', 'Notion API'], description: 'Site for me and a friend to prepare our post graduation trip to New York.', link: 'https://github.com/RodrigoEC/N.Y-here-we-go' },
+        { title: 'CCKut', technologies: ['React', 'JavaScript'], description: 'Site to show the students of Computer Science at UFCG the t-shirts that me and a friend were selling.', link: 'https://github.com/BiggerThanOurselves/CCamiseiros' },
     ]
 
     return (
