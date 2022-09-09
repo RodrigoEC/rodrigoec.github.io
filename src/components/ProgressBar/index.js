@@ -1,18 +1,20 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
-import { ProgressBarWrapper, ProgressBar as Progressing } from './styles'
+import { ProgressBarWrapper, ProgressBar as Progressing } from "./styles";
 
 export const ProgressBar = () => {
-    const [progress, setProgress] = useState(0)
+  const [progress, setProgress] = useState(0);
 
-    useEffect(() => {
-        setProgress(60)
-    }, [])
+  useEffect(() => {
+    setProgress(65);
+  }, []);
 
-    return (
-        <ProgressBarWrapper >
-            <Progressing progress={progress}> <div></div> </Progressing>
-            <span>{progress}%</span>
-        </ProgressBarWrapper>
-    )
-}
+  return (
+    <ProgressBarWrapper>
+      <Progressing progress={progress}>
+        <div></div>
+      </Progressing>
+      <span>{progress}%</span>
+    </ProgressBarWrapper>
+  );
+};

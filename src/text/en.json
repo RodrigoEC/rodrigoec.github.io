@@ -1,0 +1,64 @@
+{
+    "header": {
+        "about": "about me",
+        "experiences": "experiences",
+        "contact": "contact"
+    },
+    "aboutMe": {
+        "helloTitle": "Hi!",
+        "intro": [
+            "I’m Rodrigo, a Computer Science student currently in the sixth semester at the Federal University of Campina Grande (UFCG) in Brazil.",
+            "When it comes to my professional self I like to consider that I'm a Software Engineer in the making, slash Researcher, slash just a curious person that likes to solve problems and create new things."
+        ],
+        "loveTitle": "What I love",
+        "loveParagraph": [
+            "Quoting Dr. Ana Cláudia Quintana, “I think is sweeter to define ourselves by the things we love”, therefore, who am I?",
+            "I'm a person that loves to create new things and this translates itself in really different areas of my life. One good example of that my choice for college, I went to Science Computer because I wanted to solve problems, therefore, I wanted to create their solutions. I also love to spend time taking photos, create the scene in my head and try to make it come to life is one of the things that I’m obsessed about.",
+            "So...who am I? I'm just a creative person that's trying to make life a little bit easier for people around me."
+        ]
+    },
+    "experiences": {
+        "title": "Hi again!",
+        "subtitle": "This page is like the summary of my professional experiences in college.",
+        "college": {
+            "title": "College",
+            "text": "Well, because of the pandemic the answer to \"wich semester I'm in\" is a little abstract right now haha, so based on the disciplines that I already took, the complementary activities that I participated and the experiences that I had I created this visualization of where I am in college."
+        },
+        "myExperiences": {
+            "title": "My Experiences",
+            "text": [
+                "I’ve been working at <span>SmartPOS</span> since march of 2022. Smart is a project of the company Ingenico in a partnership with the laboratory SPLab at the Federal University of Campina Grande (UFCG).",
+                "Besides that, I’ve been a <span>@OpenDevUFCG</span> core member since february of 2021 and it has been a amazing opportunity to contribute with the Computer Science community at UFCG.",
+                "Last but not least, in June of 2021 I created a project named <span>HoCo</span>, a project that aims to help the students to manage their Complementary hours that are needed to finish college and that's a project that I’m in love with it."
+            ]
+        },
+        "techs": "Technologies",
+        "langs": "Languages",
+        "projects": {
+            "title": "Projects that I've worked on",
+            "text": [
+                "Here are some of the projects that I've worked on and that I would like to highlight it.",
+                "If you’re interested in it, just click in the card and you’ll be redirect to a link that is related to the project."
+            ],
+            "projectsData": {
+                "epol": "Project of the Federal Police of Brazil at UFCG. I had the opportunity to work with both data analysis and frontend in this project.",
+                "soLanches": "SoLanches is a project that aims to create a platform so the shops in city of Solanea-PB can have a showcase to sell their products",
+                "hoco": "HoCo is an application created to support Computer Science students at UFCG when it comes to the management of their Complementary Activities.",
+                "anonymousCents": "The first application that I create with a friend in 2020 so we could solve a grade disponibility problem. I was really fun to work on it.",
+                "hack2020": "Event brought by OpenDevUFCG. At the event I collaborated as a volunteer with the implementation of the event site.",
+                "andro2020": "I had the privilege to participate of this event both as a andromedev apprentice in the project of the organization LabRua and as an organizer of the event",
+                "nyherewego": "Site for me and a friend to prepare our post graduation trip to New York.",
+                "cckut": "Site to show the students of Computer Science at UFCG the t-shirts that me and a friend were selling.",
+                "codesq": "Project that I worked for 9 months as a frontend developer. The project was a partinership from the company HPE with the SPLab laboratory"
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact me",
+        "text": [
+            "Hi! I'm really glad you're here! if you want to reach me you can use any of the social media or e-mail listed below.",
+            "<span>Ps:</span> The icons of each social media is a link to their respectively pages."
+        ],
+        "cv": "You can also download my CV clicking on the button below"
+    }
+}
