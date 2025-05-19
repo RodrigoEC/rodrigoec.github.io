@@ -26,7 +26,6 @@ export default async function Home() {
       <Hero hero={heros.items[0]} />
       <div className="flex items-center gap-4">
         <LinkButton text="About me" href="/about-me" />
-        <div className="border-r-1 h-4 w-1 border-[#cdcdcd70]"/>
         <LinkButton text="Contact Me" href="/contact-me" className="hidden md:flex"/>
       </div>
       <div className="border-b-1 border-[#cdcdcd70]"/>
