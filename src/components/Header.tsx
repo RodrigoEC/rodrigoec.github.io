@@ -11,7 +11,7 @@ export const Header = () => {
     <nav className="py-4 sticky bg-white">
       <div className="flex items-center gap-4">
         {Object.entries(links).map(([name, link]) => (
-          <Link href={link} className={`font-bold capitalize hover:underline`}>
+          <Link key={name} href={link} className={`font-bold capitalize hover:underline`}>
             {name}
           </Link>
         ))}

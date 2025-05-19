@@ -11,7 +11,7 @@ export interface IHero {
   };
 }
 
-export const Hero = ({ hero, className, ...props }: { hero: { fields: IHero }, className?: string }) => {
+export const Hero = ({ hero, className }: { hero: { fields: IHero }, className?: string }) => {
   const { link, thumb } = hero.fields;
 
   return (
