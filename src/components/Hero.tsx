@@ -11,15 +11,15 @@ export interface IHero {
   };
 }
 
-export const Hero = ({ hero }: { hero: { fields: IHero } }) => {
+export const Hero = ({ hero, className, ...props }: { hero: { fields: IHero }, className?: string }) => {
   const { link, thumb } = hero.fields;
 
   return (
-    <Link href={link}>
+    <Link href={link} className={`w-fit ${className}`}>
       <div className="border-2 w-full box-border p-1 rounded-lg border-foreground overflow-hidden shadow-no-expand">
         <div className="rounded-lg overflow-hidden">
           <Image
-            className="object-center object-cover aspect-14/5 hover:scale-[102%] transition duration-300 "
+            className="object-center object-cover aspect-2/1 w-full hover:scale-[102%] transition duration-300 "
             src={`https:${thumb.fields.file.url}`}
             alt=""
             width={1440}
