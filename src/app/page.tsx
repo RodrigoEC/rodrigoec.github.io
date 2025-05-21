@@ -26,11 +26,14 @@ export default async function Home() {
   })) as unknown as { items: { fields: IExperience }[] };
 
   return (
-    <div className="flex flex-col gap-4 w-full max-w-[1440px] p-4">
+    <div className="flex flex-col gap-4 w-full max-w-[1440px] px-6 lg:px-16 py-6">
       <Header />
 
       <div className="flex gap-6">
-        <Hero hero={heros.items[0]} className="hidden lg:flex w-[80%]" />
+        <Hero
+          hero={heros.items[0]}
+          className="hidden lg:flex w-full max-w-[65%]"
+        />
         <div className="flex flex-col justify-between gap-6">
           <Greetings greetings={greetings.items[0]} />
           <Hero hero={heros.items[0]} className="lg:hidden" />
@@ -41,13 +44,21 @@ export default async function Home() {
         </div>
       </div>
       <div className="border-b-1 border-[#cdcdcd70]" />
-      <div className="flex items-start flex-col lg:flex-row">
-        <div className="flex flex-col gap-4 grow-1 min-w-[500px]">
+      <div className="flex items-start flex-col lg:flex-row gap-4">
+        <div className="flex flex-col gap-4 grow-1">
           <h2 className="text-[30px] font-bold">Experiences</h2>
-          <div className="w-full">
-            {jobs.items?.map((position: { fields: IExperience }, i) => (
-              <Experience key={i} experience={position} />
-            ))}
+          <div className="overflow-x-auto snap-x snap-mandatory w-[95vw] lg:w-full box-border">
+            <div className="flex flex-row lg:flex-col gap-4 w-fit overflow-x-auto snap-x snap-mandatory">
+              {jobs.items
+                ?.sort(
+                  (a, b) =>
+                    new Date(b.fields.start).getTime() -
+                    new Date(a.fields.start).getTime()
+                )
+                .map((position: { fields: IExperience }, i) => (
+                  <Experience key={i} experience={position} />
+                ))}
+            </div>
           </div>
         </div>
         <div className="grow-1 flex flex-col gap-4 ">
