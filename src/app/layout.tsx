@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-// import { Inria_Sans } from "next/font/google";
+import { Inria_Sans } from "next/font/google";
 import "./globals.css";
 
-// const InriaSans = Inria_Sans({
-//   variable: "--font-inria-sans",
-//   subsets: ["latin"],
-//   weight: ["300","400","700"],
-// });
+const InriaSans = Inria_Sans({
+  variable: "--font-inria-sans",
+  subsets: ["latin"],
+  weight: ["300","400","700"],
+});
 
 export const metadata: Metadata = {
   title: "Rodrigo Eloy Cavalcanti",
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased flex flex-col items-center`}
+        className={`${InriaSans.variable} antialiased flex flex-col items-center`}
       >
         {children}
       </body>

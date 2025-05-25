@@ -1,7 +1,8 @@
-import { Experience, IExperience } from "@/components/Experience";
+import { IExperience } from "@/components/Experience";
 import { Greetings, IGreetings } from "@/components/Greetings";
 import { Header } from "@/components/Header";
 import { Hero, IHero } from "@/components/Hero";
+import { JobsCarousel } from "@/components/JobsCarousel";
 import { LinkButton } from "@/components/LinkButton";
 import { IProject, Project } from "@/components/Project";
 import { client } from "@/contentful";
@@ -34,7 +35,7 @@ export default async function Home() {
           hero={heros.items[0]}
           className="hidden lg:flex w-full max-w-[65%]"
         />
-        <div className="flex flex-col justify-between gap-6">
+        <div className="flex flex-col w-full justify-between gap-6">
           <Greetings greetings={greetings.items[0]} />
           <Hero hero={heros.items[0]} className="lg:hidden" />
           <div className="flex flex-col gap-2">
@@ -44,21 +45,11 @@ export default async function Home() {
         </div>
       </div>
       <div className="border-b-1 border-[#cdcdcd70]" />
-      <div className="flex items-start flex-col lg:flex-row gap-4">
-        <div className="flex flex-col gap-4 grow-1">
+      <div className="flex flex-col lg:flex-row gap-4">
+        <div className="flex flex-col gap-4 grow-1 w-full lg:w-[40%]">
           <h2 className="text-[30px] font-bold">Experiences</h2>
-          <div className="overflow-x-auto snap-x snap-mandatory w-[95vw] lg:w-full box-border">
-            <div className="flex flex-row lg:flex-col gap-4 w-fit overflow-x-auto snap-x snap-mandatory">
-              {jobs.items
-                ?.sort(
-                  (a, b) =>
-                    new Date(b.fields.start).getTime() -
-                    new Date(a.fields.start).getTime()
-                )
-                .map((position: { fields: IExperience }, i) => (
-                  <Experience key={i} experience={position} />
-                ))}
-            </div>
+          <div className="flex flex-col gap-4">
+            <JobsCarousel jobs={jobs.items} />
           </div>
         </div>
         <div className="grow-1 flex flex-col gap-4 ">
