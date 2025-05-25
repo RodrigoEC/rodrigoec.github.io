@@ -9,7 +9,7 @@ export const Footer = () => {
           <span className="text-2xl font-bold">{"Let's talk!"}</span>
           <span>rodrigoecavalcanti@gmail.com</span>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 text-[white]">
           <span>© Rodrigo 2025</span>
           <Link href={"https://www.linkedin.com/in/rodrigo-eloy/"}>
             <Icon id="linkedin" size={16} />
