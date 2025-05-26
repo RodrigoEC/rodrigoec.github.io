@@ -36,7 +36,7 @@ export const JobsCarousel = ({ jobs }: { jobs: { fields: IExperience }[] }) => {
             </CarouselItem>
           ))}
       </CarouselContent>
-      <div className="flex gap-4 w-full justify-between">
+      <div className="flex gap-4 w-full pt-2 justify-between">
         <CarouselPrevious className="grow cursor-pointer"/>
         <CarouselNext className="grow cursor-pointer"/>
       </div>

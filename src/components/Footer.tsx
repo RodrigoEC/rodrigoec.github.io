@@ -9,13 +9,13 @@ export const Footer = () => {
           <span className="text-2xl font-bold">{"Let's talk!"}</span>
           <span>rodrigoecavalcanti@gmail.com</span>
         </div>
-        <div className="flex gap-4 text-[white]">
+        <div className="flex items-center gap-2 text-[white]">
           <span>© Rodrigo 2025</span>
-          <Link href={"https://www.linkedin.com/in/rodrigo-eloy/"}>
+          <Link className="cursor-pointer transition duration-300 hover:opacity-60" href={"https://www.linkedin.com/in/rodrigo-eloy/"}>
             <Icon id="linkedin" size={16} />
           </Link>
-          <Link href={"https://www.github.com/rodrigoec"}>
-          <Icon id="github" size={16} />
+          <Link className="cursor-pointer transition duration-300 hover:opacity-60" href={"https://www.github.com/rodrigoec"}>
+            <Icon id="github" size={16} />
           </Link>
         </div>
       </div>
