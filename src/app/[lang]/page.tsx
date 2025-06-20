@@ -15,7 +15,7 @@ export const revalidate = 60;
 
 interface PageProps {
   params: {
-    lang: string; // The locale will be available here
+    lang: Promise<string>; // The locale will be available here
   };
 }
 
@@ -25,7 +25,7 @@ const LANGUAGES = {
 };
 
 export default async function Home({ params }: PageProps) {
-  const { lang } = await params;
+  const lang = await params.lang;
   console.log(lang);
 
   const language = LANGUAGES[lang as "pt" | "en"];
