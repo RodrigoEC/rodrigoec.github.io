@@ -21,6 +21,7 @@ export function middleware(request: NextRequest) {
   const locale = defaultLocale; // Or detect based on Accept-Language header, cookie, etc.
 
   request.nextUrl.pathname = `/${locale}${pathname}`;
+  console.log(typeof NextResponse.redirect(request.nextUrl))
   return NextResponse.redirect(request.nextUrl);
 }
 

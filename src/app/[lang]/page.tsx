@@ -14,9 +14,9 @@ import React from "react";
 export const revalidate = 60;
 
 interface PageProps {
-  params: {
+  params: Promise<{
     lang: string; // The locale will be available here
-  };
+  }>;
 }
 
 const LANGUAGES = {
@@ -25,8 +25,7 @@ const LANGUAGES = {
 };
 
 export default async function Home({ params }: PageProps) {
-  const { lang } = params;
-  console.log(lang);
+  const { lang } = await params;
 
   const language = LANGUAGES[lang as "pt" | "en"];
 
