@@ -20,8 +20,6 @@ export const Experience = ({
 }) => {
   const { title, position, start, end, thumb } = experience.fields;
 
-  console.log(experience);
-
   return (
     <div className="flex flex-col md:flex-row justify-between w-full items-start md:items-center gap-2">
       <div className="flex flex-row gap-2 w-full">
@@ -45,9 +43,9 @@ export const Experience = ({
         </div>
       </div>
       <div className="flex flex-col text-md opacity-60 justify-end">
-        <div className="flex gap-2 items-center italic">
-          <span className="whitespace-nowrap text-start">{formatDate(start)}</span>-
+        <div className="flex flex-col gap-2 items-end italic text-sm">
           <span className="whitespace-nowrap text-start">{end ? formatDate(end) : "currently"}</span>
+          <span className="whitespace-nowrap text-end">{formatDate(start)}</span>
         </div>
       </div>
     </div>
