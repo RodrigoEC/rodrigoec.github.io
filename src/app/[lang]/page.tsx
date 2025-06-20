@@ -26,6 +26,7 @@ const LANGUAGES = {
 
 export default async function Home({ params }: PageProps) {
   const { lang } = params;
+  console.log(lang);
 
   const language = LANGUAGES[lang as "pt" | "en"];
 
@@ -115,16 +116,3 @@ export default async function Home({ params }: PageProps) {
     </>
   );
 }
-
-// export async function getServerSideProps(context) {
-//   const { locale} = context; // Access locale here
-//   // ... your data fetching logic using 'locale'
-//   console.log('Server-side rendering for locale:', locale);
-
-//   return {
-//     props: {
-//       serverLocale: locale, // Pass it as a prop to the component
-//       // ... your fetched data
-//     },
-//   };
-// }
