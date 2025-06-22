@@ -43,7 +43,7 @@ export const Experience = ({
         </div>
       </div>
       <div className="flex w-full xl:w-fit flex-col text-md opacity-60 justify-end">
-        <div className="flex justify-between w-full  xl:w-fit flex-row xl:flex-col gap-2 items-end italic text-sm">
+        <div className="flex justify-between w-full flex-row-reverse xl:w-fit xl:flex-col gap-2 items-end italic text-sm">
           <span className="whitespace-nowrap text-start">{end ? formatDate(end) : "currently"}</span>
           <span className="whitespace-nowrap text-end">{formatDate(start)}</span>
         </div>

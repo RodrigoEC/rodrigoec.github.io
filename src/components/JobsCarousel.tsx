@@ -23,7 +23,7 @@ export const JobsCarousel = ({ jobs }: { jobs: { fields: IExperience }[] }) => {
         }),
       ]}
     >
-      <CarouselContent className="h-[300px] md:h-[230px]">
+      <CarouselContent  className="-mt-1 h-[300px]">
         {jobs
           ?.sort(
             (a, b) =>
