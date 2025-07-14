@@ -26,7 +26,7 @@ export default function RootLayout({
       >
         {children}
       </body>
-      <HotjarAnalytics siteId={"6463961"} />
+      <HotjarAnalytics siteId={"6464106"} />
     </html>
   );
 }
