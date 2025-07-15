@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inria_Sans } from "next/font/google";
 import "./globals.css";
 import HotjarAnalytics from "@/components/HotjarAnalytics";
+import SleekplanWidget from "@/components/SleekWidget";
 
 const InriaSans = Inria_Sans({
   variable: "--font-inria-sans",
@@ -26,6 +27,7 @@ export default function RootLayout({
       >
         {children}
       </body>
+      <SleekplanWidget />
       <HotjarAnalytics siteId={"6464106"} />
     </html>
   );
